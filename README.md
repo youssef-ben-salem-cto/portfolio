@@ -47,4 +47,4 @@ To deploy your own version:
 4. Every time you run `git push` to the `main` branch, the included `.github/workflows/hugo.yaml` workflow will automatically trigger, build the site securely using Hugo, and publish it to your live GitHub Pages URL!
 
 ## License
-Original theme framework licensed under MIT (Felipe Cordero). Customizations, text content, and project assets are copyright Youssef Ben Salem.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. Original theme framework by Felipe Cordero.
