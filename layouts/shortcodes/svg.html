@@ -16,7 +16,7 @@
     <div class="w-full flex justify-center">
       {{ $src := .Get "src" }}
       {{ $alt := .Get "alt" | default "Excalidraw Diagram" }}
-      <img src="{{ $src }}" alt="{{ $alt }}" class="w-full h-auto max-w-full" style="max-height: 80vh; object-fit: contain;">
+      <img src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ $alt }}" class="w-full h-auto max-w-full" style="max-height: 80vh; object-fit: contain;">
     </div>
   </div>
 </div>

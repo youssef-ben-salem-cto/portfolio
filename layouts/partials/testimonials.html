@@ -17,7 +17,7 @@
                     </blockquote>
                     <div class="flex-1">
                         <div class="flex items-center justify-left mt-6 space-x-3 rtl:space-x-reverse">
-                            <img src="{{ $exp.photo }}" alt="{{ $exp.name }} - {{ $exp.role }} at {{ $exp.company }}"
+                            <img src="{{ $exp.photo | relURL }}" alt="{{ $exp.name }} - {{ $exp.role }} at {{ $exp.company }}"
                                 class="img-round grayscale w-24 rounded-full">
 
                             <div class="pe-3">

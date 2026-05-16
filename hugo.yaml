@@ -3,7 +3,6 @@ languageCode: "en-us"
 title: "Youssef Ben Salem"
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
-relativeURLs: true
 
 languages:
   en:

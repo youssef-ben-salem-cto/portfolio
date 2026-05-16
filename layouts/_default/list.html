@@ -75,7 +75,7 @@
           <div class="w-full h-48 relative overflow-hidden flex-shrink-0 bg-bg-secondary dark:bg-bg-secondary">
             {{ if .Params.featured_image }}
             <img 
-              src="{{ .Params.featured_image }}" 
+              src="{{ strings.TrimPrefix "/" .Params.featured_image | relURL }}" 
               alt="" 
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"

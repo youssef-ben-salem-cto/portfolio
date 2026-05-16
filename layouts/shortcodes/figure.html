@@ -16,7 +16,7 @@
     <div class="w-full flex justify-center">
       {{ $src := .Get "src" }}
       {{ $alt := .Get "alt" | default "Image Figure" }}
-      <img src="{{ $src }}" alt="{{ $alt }}" class="w-full h-auto max-w-full rounded-md shadow-sm" style="max-height: 80vh; object-fit: contain;">
+      <img src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ $alt }}" class="w-full h-auto max-w-full rounded-md shadow-sm" style="max-height: 80vh; object-fit: contain;">
     </div>
     {{ if .Get "caption" }}
     <div class="mt-4 text-center text-sm text-text-secondary dark:text-text-muted italic">

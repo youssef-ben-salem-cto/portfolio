@@ -22,7 +22,7 @@
           <div class="hero-image relative" data-animation="404-image">
             <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-bg bg-opacity-20 backdrop-filter backdrop-blur-lg border-4 border-border-primary border-opacity-30 overflow-hidden">
               <div class="w-full h-full overflow-hidden rounded-full">
-                <img src="{{ .Site.Params.fourofour_image }}" alt="Portrait of {{ .Site.Params.name }}" loading="lazy" decoding="async" class="object-cover w-full h-full" />
+                <img src="{{ .Site.Params.fourofour_image | relURL }}" alt="Portrait of {{ .Site.Params.name }}" loading="lazy" decoding="async" class="object-cover w-full h-full" />
               </div>
             </div>
             <div class="absolute -bottom-5 -right-5 bg-second text-white px-4 py-2 rounded-lg font-medium shadow-lg">

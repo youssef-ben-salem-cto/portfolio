@@ -12,7 +12,7 @@
 {{ if eq (.Get "type") "diagram" }}
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" | default "Architecture diagram" }}
-<img src="{{ $src }}" alt="{{ $alt }}" class="w-full h-auto rounded-sm border border-zinc-200 dark:border-zinc-800" loading="lazy" />
+<img src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ $alt }}" class="w-full h-auto rounded-sm border border-zinc-200 dark:border-zinc-800" loading="lazy" />
 {{ else if eq (.Get "type") "code" }}
 <div class="text-sm font-mono text-zinc-600 dark:text-zinc-300 overflow-x-auto">
 {{ .Inner }}
