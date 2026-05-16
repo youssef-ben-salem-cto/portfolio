@@ -63,6 +63,7 @@ socialImage: "/projects/afreximbank-connect/images/afr-connect1.png"
 <div class="relative w-full">
 
 {{% evidence-container classification="AUTHENTICATION FLOW" %}}
+
 ```mermaid
 sequenceDiagram
     participant Executive
@@ -86,6 +87,7 @@ sequenceDiagram
     Core-->>Device: Success
     Device-->>Executive: Approval Complete
 ```
+
 {{% /evidence-container %}}
 
 </div>
