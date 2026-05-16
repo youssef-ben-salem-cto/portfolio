@@ -29,7 +29,7 @@ backgroundDark = "bg-slate-900"
 <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 relative z-10">
 <div class="shrink-0">
-<img src="/projects/we-work-better/images/we-removebg-preview.png" alt="We Work Better Logo" class="w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2" />
+<img src="{{< relurl "projects/we-work-better/images/we-removebg-preview.png" >}}" alt="We Work Better Logo" class="w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2" />
 </div>
 <div class="text-center md:text-left">
 <h2 class="text-4xl font-extrabold text-text-primary mb-3">We Work Better Platform</h2>

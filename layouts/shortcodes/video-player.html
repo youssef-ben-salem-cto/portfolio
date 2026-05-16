@@ -15,8 +15,8 @@
 
   <div class="bg-black/5 dark:bg-black/20 rounded border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden relative">
     <video 
-      src="{{ $src }}" 
-      {{ with $poster }}poster="{{ . }}"{{ end }}
+      src="{{ strings.TrimPrefix "/" $src | relURL }}" 
+      {{ with $poster }}poster="{{ strings.TrimPrefix "/" . | relURL }}"{{ end }}
       title="{{ $title }}"
       aria-label="{{ $title }}"
       class="w-full h-auto"

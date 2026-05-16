@@ -105,7 +105,7 @@ Engineered for scale and continuous operation, the system utilizes strict, hardw
 <div class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 shadow-sm text-center">
 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">System Overview Dashboard</h2>
 <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700 inline-block bg-white dark:bg-gray-800 p-2 max-w-4xl mx-auto">
-<img src="/images/tahut-kms/images/sys-overview.png" alt="System Overview Dashboard" class="w-full h-auto object-contain rounded-lg">
+<img src="{{< relurl "images/tahut-kms/images/sys-overview.png" >}}" alt="System Overview Dashboard" class="w-full h-auto object-contain rounded-lg">
 </div>
 </div>
 

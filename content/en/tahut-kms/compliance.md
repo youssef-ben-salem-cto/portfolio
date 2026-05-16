@@ -27,7 +27,7 @@ weight: 40
 </ul>
 </div>
 <div class="w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-<img src="/images/tahut-kms/images/Identity%20&%20SSO.png" alt="Identity & SSO" class="w-full h-auto object-contain rounded-lg">
+<img src="{{< relurl "images/tahut-kms/images/Identity%20&%20SSO.png" >}}" alt="Identity & SSO" class="w-full h-auto object-contain rounded-lg">
 </div>
 </div>
 
@@ -45,7 +45,7 @@ weight: 40
 </ul>
 </div>
 <div class="w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-<img src="/images/tahut-kms/images/Governance%20Hierarchy.png" alt="Governance Hierarchy" class="w-full h-auto object-contain rounded-lg">
+<img src="{{< relurl "images/tahut-kms/images/Governance%20Hierarchy.png" >}}" alt="Governance Hierarchy" class="w-full h-auto object-contain rounded-lg">
 </div>
 </div>
 
@@ -82,7 +82,7 @@ weight: 40
 </ul>
 </div>
 <div class="w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-<img src="/images/tahut-kms/images/guardrails.png" alt="Guardrails" class="w-full h-auto object-contain rounded-lg">
+<img src="{{< relurl "images/tahut-kms/images/guardrails.png" >}}" alt="Guardrails" class="w-full h-auto object-contain rounded-lg">
 </div>
 </div>
 

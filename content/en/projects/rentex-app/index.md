@@ -17,7 +17,7 @@ socialImage: "/projects/rentex-app/images/converted.svg"
 <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 <div class="flex items-center gap-6 mb-8 relative z-10">
 <div class="w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden">
-<img src="/projects/rentex-app/images/converted.svg" alt="Rentex App Logo" class="w-full h-full object-cover" />
+<img src="{{< relurl "projects/rentex-app/images/converted.svg" >}}" alt="Rentex App Logo" class="w-full h-full object-cover" />
 </div>
 <div>
 <h2 class="text-3xl font-bold text-text-primary mb-2">Rentex App Implementation</h2>

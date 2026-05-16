@@ -19,7 +19,7 @@ weight: 20
         <p><strong>Prompt Assembly Pipeline:</strong> The engine dynamically injects system personas, previous memory states, few-shot examples, and the retrieved context into a single cohesive prompt, strictly enforcing the user's native language.</p>
       </div>
       <div class="flex-1 w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-        <img src="/images/tahut-kms/images/intelligence.png" alt="Agent Intelligence" class="w-full h-auto object-contain rounded-lg">
+        <img src="{{< relurl "images/tahut-kms/images/intelligence.png" >}}" alt="Agent Intelligence" class="w-full h-auto object-contain rounded-lg">
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@ weight: 20
         <p>To achieve sub-200ms page-snapping, the Next.js frontend uses a custom <code>useWorkspaceSync</code> hook. This bridge coordinates the <code>react-pdf</code> web workers and the Zustand store to ensure visual fidelity during complex layout shifts or dark-mode toggles.</p>
       </div>
       <div class="flex-1 w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-        <img src="/images/tahut-kms/images/collection-workspace.png" alt="Collection Workspace" class="w-full h-auto object-contain rounded-lg">
+        <img src="{{< relurl "images/tahut-kms/images/collection-workspace.png" >}}" alt="Collection Workspace" class="w-full h-auto object-contain rounded-lg">
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@ weight: 20
         <p>Components receiving continuous SSE streams strictly avoid massive array spreading (<code>[...prev, update]</code>) on every tick. We use <code>useRef</code> and throttled React state batching to prevent heavy memory leaks in browsers during long reasoning streams.</p>
       </div>
       <div class="flex-1 w-full rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-2">
-        <img src="/images/tahut-kms/images/ingestion-progress.png" alt="Ingestion Progress" class="w-full h-auto object-contain rounded-lg">
+        <img src="{{< relurl "images/tahut-kms/images/ingestion-progress.png" >}}" alt="Ingestion Progress" class="w-full h-auto object-contain rounded-lg">
       </div>
     </div>
   </div>

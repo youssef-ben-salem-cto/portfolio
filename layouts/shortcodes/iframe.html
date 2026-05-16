@@ -6,7 +6,7 @@
     <div class="aspect-video">
       <iframe
         id="iframe-{{ $id }}"
-        src="{{ .Get "src" }}"
+        src="{{ strings.TrimPrefix "/" (.Get "src") | relURL }}"
         class="w-full h-full"
         style="border: none;"
         allowfullscreen

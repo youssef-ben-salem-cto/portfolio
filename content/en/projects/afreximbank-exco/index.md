@@ -18,7 +18,7 @@ socialImage: "/projects/afreximbank-exco/images/exco1.png"
 <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 <div class="flex flex-col md:flex-row items-start md:items-center gap-8 mb-8 relative z-10">
 <div class="w-24 h-24 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-border-color p-4">
-<img src="/projects/afreximbank-exco/images/afr.svg" alt="Afreximbank Logo" class="w-full h-full object-contain" />
+<img src="{{< relurl "projects/afreximbank-exco/images/afr.svg" >}}" alt="Afreximbank Logo" class="w-full h-full object-contain" />
 </div>
 <div>
 <h2 class="text-3xl font-bold text-text-primary mb-2">Secure Executive Operations</h2>

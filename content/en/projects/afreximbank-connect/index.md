@@ -18,7 +18,7 @@ socialImage: "/projects/afreximbank-connect/images/afr-connect1.png"
 <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 <div class="flex flex-col md:flex-row items-start md:items-center gap-8 mb-8 relative z-10">
 <div class="w-24 h-24 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-border-color">
-<img src="/projects/afreximbank-connect/images/afr.svg" alt="Afreximbank Connect Logo" class="w-16 h-16 object-contain" />
+<img src="{{< relurl "projects/afreximbank-connect/images/afr.svg" >}}" alt="Afreximbank Connect Logo" class="w-16 h-16 object-contain" />
 </div>
 <div>
 <h2 class="text-3xl font-bold text-text-primary mb-2">Secure Mobile Connectivity</h2>
