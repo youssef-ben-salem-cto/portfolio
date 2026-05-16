@@ -24,13 +24,13 @@
       <!-- Hero Video -->
       <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 max-w-5xl mx-auto aspect-video bg-black mb-8">
         <video autoplay muted playsinline controls class="w-full h-full object-cover">
-          <source src="/images/tahut-kms/videos/workspace/chat.mp4" type="video/mp4">
+          <source src="{{ "images/tahut-kms/videos/workspace/chat.mp4" | relURL }}" type="video/mp4">
         </video>
       </div>
 
       <!-- Video Gallery Button -->
       <div class="flex justify-center mb-8">
-        <a href="/tahut-kms/video-gallery/" class="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+        <a href="{{ "tahut-kms/video-gallery/" | relURL }}" class="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
           <i class="fas fa-play-circle text-xl text-cyan-400 dark:text-cyan-600"></i> Explore the Interactive Video Gallery
         </a>
       </div>
@@ -52,7 +52,7 @@
             </p>
           </div>
           <div class="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
-            <img src="/images/tahut-kms/pyramids.png" alt="Knowledge Pyramids" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500">
+            <img src="{{ "images/tahut-kms/pyramids.png" | relURL }}" alt="Knowledge Pyramids" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500">
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
           </p>
         </div>
         <div class="flex-1 w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-          <img src="/images/tahut-kms/system-security.png" alt="Settings & Governance" class="w-full h-auto object-contain">
+          <img src="{{ "images/tahut-kms/system-security.png" | relURL }}" alt="Settings & Governance" class="w-full h-auto object-contain">
         </div>
       </div>
 
@@ -196,7 +196,7 @@
               <li><strong>Declarative Rules Engine:</strong> Configuration-driven graph pattern matching via Neo4j Cypher and APOC triggers.</li>
               <li><strong>Dual-Path Alert Streaming:</strong> Instant persistence to local dashboard alongside Kafka topic distribution for SIEM integration.</li>
             </ul>
-            <a href="/tahut-kms/eye-of-horus/" class="inline-flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-semibold hover:text-cyan-700 dark:hover:text-cyan-300 transition-colors">
+            <a href="{{ "tahut-kms/eye-of-horus/" | relURL }}" class="inline-flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-semibold hover:text-cyan-700 dark:hover:text-cyan-300 transition-colors">
               Go to Details <i class="fas fa-arrow-right text-sm"></i>
             </a>
           </div>
