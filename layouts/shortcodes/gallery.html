@@ -36,8 +36,14 @@
         <!-- Handled by $dir if it existed -->
       {{ else }}
         {{ range .Params }}
-          <a href="{{ strings.TrimPrefix "/" . | relURL }}" data-fslightbox="gallery" class="block overflow-hidden rounded-lg border border-white/5 bg-zinc-800/50 hover:border-emerald-500/50 transition-colors duration-300">
-            <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="Gallery Image" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500" loading="lazy">
+          {{ $img := . }}
+          {{ if not (strings.HasPrefix $img "/") }}
+            {{ $img = printf "%s%s" $.Page.RelPermalink $img }}
+          {{ else }}
+            {{ $img = strings.TrimPrefix "/" $img | relURL }}
+          {{ end }}
+          <a href="{{ $img }}" data-fslightbox="gallery" class="block overflow-hidden rounded-lg border border-white/5 bg-zinc-800/50 hover:border-emerald-500/50 transition-colors duration-300">
+            <img src="{{ $img }}" alt="Gallery Image" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500" loading="lazy">
           </a>
         {{ end }}
       {{ end }}

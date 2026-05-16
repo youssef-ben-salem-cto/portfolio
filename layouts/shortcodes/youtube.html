@@ -1,12 +1,20 @@
-{{ $id := .Get 0 }}
-<div class="aspect-video w-full my-4">
-  <iframe
-    src="https://www.youtube.com/embed/{{ $id }}?rel=0"
-    class="w-full h-full"
-    title="{{ i18n "youtubePlayerTitle" }}"
-    frameborder="0"
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background-color: #000;">
+  <iframe 
+    src="https://www.youtube.com/embed/{{ .Get "id" }}"
+    srcdoc="<style>
+      * { padding:0; margin:0; overflow:hidden }
+      html, body { height: 100%; }
+      img, span { position: absolute; width: 100%; top: 0; bottom: 0; margin: auto; }
+      span { height: 1.5em; text-align: center; font: 48px/1.5 sans-serif; color: white; text-shadow: 0 0 0.5em black; transition: transform 0.2s; }
+      a:hover span { transform: scale(1.1); }
+    </style>
+    <a href=https://www.youtube.com/embed/{{ .Get "id" }}?autoplay=1>
+      <img src=https://img.youtube.com/vi/{{ .Get "id" }}/maxresdefault.jpg alt='Video Preview'>
+      <span aria-label='Play'>▶</span>
+    </a>"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
-    style="border:0;"
-  ></iframe>
+    title="{{ .Get "title" | default "YouTube Video" }}">
+  </iframe>
 </div>

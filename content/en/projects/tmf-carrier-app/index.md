@@ -67,7 +67,7 @@ Comprehensive System Architecture
 <div class="space-y-4">
 <div class="flex items-start gap-4 p-4 rounded-xl bg-bg dark:bg-bg border border-border-primary">
 <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-<i class="fab fa-flutter text-primary text-xl"></i>
+<i class="fas fa-mobile-alt text-primary text-xl"></i>
 </div>
 <div>
 <h4 class="font-bold text-text-primary">Mobile Experience (Flutter)</h4>

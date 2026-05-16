@@ -103,9 +103,9 @@ The Tahut KMS interface is built to be fast, reactive, and highly secure. The fo
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">System Maintenance Mode</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Global lockdown mode preventing ingestion or chat during critical database migrations.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/settings/maintenance.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="B1r7oeqWgEA" >}}
+    </div>
   </div>
 
 </div>
