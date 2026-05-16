@@ -15,33 +15,33 @@ The Tahut KMS interface is built to be fast, reactive, and highly secure. The fo
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">WebAuthn / Passkeys Login</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Passwordless, phishing-resistant authentication using hardware keys.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/auth/login-web-authn.mov" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="KYfX4KeTx9c" >}}
+    </div>
   </div>
 
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Enterprise SSO (Auth0)</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Seamless integration with corporate identity providers.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/auth/sso-auth0-login.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="YOtR5KiEB3k" >}}
+    </div>
   </div>
 
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Bulk User Provisioning</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Administrators can import and invite multiple users simultaneously.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/auth/bulk-user.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="fps90_-M_PA" >}}
+    </div>
   </div>
 
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Accepting Invitations</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">The secure onboarding flow for newly invited platform users.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/auth/accept-invitation.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="KG3RA2Kh3hE" >}}
+    </div>
   </div>
 
 </div>
@@ -55,17 +55,17 @@ The Tahut KMS interface is built to be fast, reactive, and highly secure. The fo
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Creating a Collection</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Configuring isolated data silos for specific departmental use-cases.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/collection/create-collection.mov" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="BgIby-SEXqk" >}}
+    </div>
   </div>
 
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Asynchronous Ingestion Pipeline</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Live Server-Sent Event (SSE) progress tracking during mass document vectorization.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/collection/ingestion.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="91LBEwsdPHo" >}}
+    </div>
   </div>
 
 </div>
@@ -79,9 +79,9 @@ The Tahut KMS interface is built to be fast, reactive, and highly secure. The fo
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">AI Chat Workspace</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Real-time interaction with the LLM, fully grounded in the secure document context.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/workspace/chat.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="oMmKPNJD2fA" >}}
+    </div>
   </div>
 
 </div>
@@ -95,9 +95,9 @@ The Tahut KMS interface is built to be fast, reactive, and highly secure. The fo
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
     <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Adding Custom LLMs</h3>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Dynamically connecting new local or cloud models to the inference engine.</p>
-    <video controls preload="metadata" class="w-full h-auto rounded-lg bg-black mt-auto">
-      <source src="{{< relurl "images/tahut-kms/videos/settings/add-models.mp4" >}}" type="video/mp4">
-    </video>
+    <div class="mt-auto w-full rounded-lg overflow-hidden shadow-inner border border-gray-200 dark:border-gray-700 bg-black">
+      {{< youtube id="D-XBMpdjSiU" >}}
+    </div>
   </div>
 
   <div class="bg-white dark:bg-gray-800 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col h-full">
