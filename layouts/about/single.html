@@ -69,7 +69,7 @@
             Download Full CV
           </a>
           
-          <a href="mailto:{{ .Site.Params.email | default "contact@example.com" }}"
+          <a href="mailto:{{ .Site.Params.email | default "contact@example.com" }}" onclick="window.copyEmail(event, '{{ .Site.Params.email | default "contact@example.com" }}')"
              class="group inline-flex items-center gap-2 px-8 py-3.5 bg-gray-50 dark:bg-zinc-800/80 text-text-primary dark:text-gray-200 border border-gray-200 dark:border-zinc-700 rounded-lg font-semibold
                     transition-all duration-300 hover:-translate-y-1 hover:bg-white dark:hover:bg-zinc-700 hover:shadow-md
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-900"

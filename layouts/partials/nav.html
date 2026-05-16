@@ -349,24 +349,16 @@
     });
 
     // Email copy functionality
-    function copyEmail(e, email) {
-      e.preventDefault();
+    window.copyEmail = function(e, email) {
+      if (e) e.preventDefault();
       
-      // Copy to clipboard first
+      // Copy to clipboard
       if (navigator.clipboard) {
         navigator.clipboard.writeText(email).then(() => {
           showNavToast('Email copied to clipboard!');
         });
       }
-      
-      // Trigger mail client explicitly without opening a blank tab
-      // The hidden iframe prevents browsers from navigating away or opening blank tabs
-      const iframe = document.createElement('iframe');
-      iframe.style.display = 'none';
-      iframe.src = 'mailto:' + email;
-      document.body.appendChild(iframe);
-      setTimeout(() => document.body.removeChild(iframe), 1000);
-    }
+    };
 
     function showNavToast(message) {
       const toast = document.createElement('div');

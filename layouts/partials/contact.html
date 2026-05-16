@@ -163,19 +163,13 @@
     }
     
     window.copyContactEmail = function(e, email) {
-      e.preventDefault();
+      if (e) e.preventDefault();
       
       if (navigator.clipboard) {
         navigator.clipboard.writeText(email).then(() => {
           showToast('Email copied to clipboard!');
         });
       }
-      
-      const iframe = document.createElement('iframe');
-      iframe.style.display = 'none';
-      iframe.src = 'mailto:' + email;
-      document.body.appendChild(iframe);
-      setTimeout(() => iframe.remove(), 1000);
     };
   });
 </script>
