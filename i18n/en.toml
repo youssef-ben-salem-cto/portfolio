@@ -1,0 +1,65 @@
+[helloIm]
+other = "Hello, I'm"
+
+[getInTouch]
+other = "Get in Touch"
+
+[viewCV]
+other = "View CV"
+
+[aboutMe]
+other = "About Me"
+
+[connectOnLinkedIn]
+other = "Connect on LinkedIn"
+
+[quickFacts]
+other = "Quick Facts"
+
+[more]
+other = "More"
+
+[interests]
+other = "Interests"
+
+[languages]
+other = "Languages"
+
+[aboutName]
+other = "About"
+
+[downloadResume]
+other = "Download Resume"
+
+[keyAchievements]
+other = "Key Achievements"
+
+[contactFormLabel]
+other = "Contact"
+
+[sendMeAMessage]
+other = "Send Me A Message"
+
+[contactFormLabelNameLabel]
+other = "Name"
+
+[contactFormLabelEmailLabel]
+other = "Email"
+
+[contactFormLabelSubjectLabel]
+other = "Subject"
+
+[contactFormLabelMessageLabel]
+other = "Message"
+
+[contactFormSendBtnLabel]
+other = "Send Message"
+
+[contactInformation]
+other = "Contact Information"
+
+[learnMore]
+other = "Learn More"
+
+[relatedContent]
+other = "Related Content"

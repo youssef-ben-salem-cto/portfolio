@@ -1,0 +1,48 @@
+---
+title: "Experience"
+intro: "More than [YRS_EXP] years of experience combining deep technical expertise and executive leadership."
+resume_label: "Download CV"
+resume_downloads:
+  - lang: "en"
+    label: "English PDF"
+resume_url: "/CV2026.pdf"
+positions:
+  - period: "June 2022 – Present"
+    company: "MINT-IT"
+    company_url: "https://www.mintit.io"
+    role: "C.T.O (Chief Technology Officer)"
+    location: "Tunisia"
+    industry: "Tech & Innovation"
+    company_description: "Web, Mobile Development & Innovative Solutions."
+    bullet_points:
+      - "Technical direction and R&D strategy for large-scale Web, Desktop, and Mobile projects."
+      - "Design of highly scalable Microservices and Event-Driven architectures (Kafka, Redis)."
+      - "Implementation of Cloud Native infrastructures (AWS, Azure, GCP) and orchestration via Kubernetes."
+      - "Deployment of Agentic AI solutions (n8n, LangGraph, LangChain, Google A.D.K)."
+      - "Integration of GraphRAG and implementation of emerging protocols (MCP, A2A)."
+  - period: "May 2017 – May 2022"
+    company: "M.S.T.C S.A"
+    role: "C.E.O / C.T.O"
+    location: "Tunisia"
+    industry: "FinTech & Innovation"
+    company_description: "Monetic services and technologies."
+    bullet_points:
+      - "General and technical direction, fundraising, and innovation strategy."
+      - "Design of bilateral monetic compensation platforms (Tunisian Post)."
+      - "Drafting and filing of invention patents."
+  - period: "April 2012 – April 2017"
+    company: "Servimax"
+    role: "Technical & Operations Director"
+    location: "Tunisia"
+    industry: "IT Operations"
+    bullet_points:
+      - "Management of development and industrial operations."
+      - "Management of technical roadmap and B2B relations."
+  - period: "Jan 2010 – March 2012"
+    company: "2KIP"
+    role: "Desktop & Mobile Project Manager"
+    location: "Tunisia"
+    industry: "Digital Solutions"
+    bullet_points:
+      - "Analysis, design, and development of digital marketing and CRM solutions."
+---

@@ -1,0 +1,38 @@
+<figure class="group relative my-8 overflow-hidden rounded-xl bg-zinc-100/70 dark:bg-zinc-900/70 backdrop-blur-md border border-zinc-200/50 dark:border-white/10 shadow-sm dark:shadow-2xl p-6 transition-all hover:bg-zinc-100 dark:hover:bg-zinc-900/80">
+  
+  {{ $src := .Get "src" }}
+  {{ $poster := .Get "poster" }}
+  {{ $title := .Get "title" | default "Video presentation" }}
+  {{ $caption := .Get "caption" }}
+
+  <!-- Metadata Bar -->
+  <div class="flex items-center gap-3 mb-4">
+    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-500 animate-pulse"></div>
+    <span class="font-mono text-xs text-blue-700 dark:text-blue-400 tracking-wider font-semibold">
+      VIDEO EVIDENCE
+    </span>
+  </div>
+
+  <div class="bg-black/5 dark:bg-black/20 rounded border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden relative">
+    <video 
+      src="{{ $src }}" 
+      {{ with $poster }}poster="{{ . }}"{{ end }}
+      title="{{ $title }}"
+      aria-label="{{ $title }}"
+      class="w-full h-auto"
+      preload="none"
+      controls
+      controlsList="nodownload"
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  {{ with $caption }}
+  <figcaption class="mt-4 text-sm font-mono text-zinc-600 dark:text-zinc-400 text-center">
+    {{ . }}
+  </figcaption>
+  {{ else }}
+  <figcaption class="sr-only">{{ $title }}</figcaption>
+  {{ end }}
+</figure>

@@ -1,0 +1,42 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Params.name }}",
+  "jobTitle": "Chief Technology Officer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "MINT-IT"
+  },
+  "url": "{{ .Site.BaseURL }}",
+  "sameAs": [
+    "{{ .Site.Params.linkedin_url }}",
+    "{{ .Site.Params.github_url }}"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>
+{{ else if or (eq .Type "blog") (eq .Type "projects") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "image": "{{ with .Params.featured_image }}{{ . | absURL }}{{ else }}{{ with .Site.Params.og_image }}{{ . | absURL }}{{ end }}{{ end }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}"
+}
+</script>
+{{ end }}

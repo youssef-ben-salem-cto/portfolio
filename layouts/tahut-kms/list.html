@@ -1,0 +1,210 @@
+{{ define "main" }}
+<div class="min-h-screen bg-bg dark:bg-gray-900 pt-24 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero Section -->
+    <div class="mb-16 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+        Tahut KMS: <span class="text-cyan-600 dark:text-cyan-400">The Unified Intelligence Layer for Sovereign Banking.</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-8">
+        An enterprise-grade, air-gapped Knowledge Management System powered by Tri-Tier Hybrid AI (Graph, Vector, Wiki). Built for zero-telemetry environments.
+      </p>
+      
+      <!-- Tech Stack -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12">
+        {{ $techs := slice "Next.js 16" "FastAPI" "pgvector" "OpenSearch" "Neo4j" "Kafka" "Local/Cloud LLMs" "Redis" }}
+        {{ range $techs }}
+        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium border border-gray-200 dark:border-gray-700">
+          {{ . }}
+        </span>
+        {{ end }}
+      </div>
+
+      <!-- Hero Video -->
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 max-w-5xl mx-auto aspect-video bg-black mb-8">
+        <video autoplay muted playsinline controls class="w-full h-full object-cover">
+          <source src="/images/tahut-kms/videos/workspace/chat.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video Gallery Button -->
+      <div class="flex justify-center mb-8">
+        <a href="/tahut-kms/video-gallery/" class="inline-flex items-center gap-3 px-8 py-4 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <i class="fas fa-play-circle text-xl text-cyan-400 dark:text-cyan-600"></i> Explore the Interactive Video Gallery
+        </a>
+      </div>
+    </div>
+
+    <!-- The Bento Grid Features -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      
+      <!-- Box 1: Tri-Tier -->
+      <div class="md:col-span-2 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 relative overflow-hidden group">
+        <div class="absolute inset-0 opacity-10 bg-gradient-to-br from-cyan-400 to-blue-600 mix-blend-overlay"></div>
+        <div class="relative z-10 flex flex-col h-full justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <i class="fas fa-layer-group text-cyan-500"></i> Tri-Tier Hybrid Chamber
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 text-lg mb-6">
+              Seamless fallback between Wiki (static), Vector (semantic), and GraphRAG (neural relationships) ensuring 100% accurate, hallucination-free retrieval.
+            </p>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
+            <img src="/images/tahut-kms/pyramids.png" alt="Knowledge Pyramids" class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500">
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2: Air-Gapped -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col justify-center text-center">
+        <div class="w-16 h-16 bg-cyan-100 dark:bg-cyan-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+          <i class="fas fa-shield-alt text-3xl text-cyan-600 dark:text-cyan-400"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Air-Gapped Sovereignty</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          100% private deployment. Zero telemetry, local or private-cloud LLM support, and AES-256 encryption. Your data never leaves your control.
+        </p>
+      </div>
+
+      <!-- Box 3: Enterprise Governance -->
+      <div class="md:col-span-3 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col md:flex-row gap-8 items-center">
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+            <i class="fas fa-fingerprint text-purple-500"></i> Enterprise Governance
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-lg mb-4">
+            Engineered for strict IT Governance. Features PII Guardrails, Air-Gapped Authority, Global SSO (SAML/OIDC), and Kafka-streamed immutable audit logging to align with <strong>DORA, GDPR, ANSSI, and PCI DSS</strong> standards.
+          </p>
+        </div>
+        <div class="flex-1 w-full rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <img src="/images/tahut-kms/system-security.png" alt="Settings & Governance" class="w-full h-auto object-contain">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Gateway to Deep Dives -->
+    <div class="mb-24">
+      <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Deep Dives</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        {{ range .Pages }}
+        {{ $bgClass := "bg-white dark:bg-gray-800" }}
+        {{ $borderHover := "group-hover:border-cyan-500 dark:group-hover:border-cyan-400" }}
+        {{ $textHover := "group-hover:text-cyan-600 dark:group-hover:text-cyan-400" }}
+        
+        {{ if eq .File.LogicalName "video-gallery.md" }}
+          {{ $bgClass = "bg-purple-50 dark:bg-purple-900/20" }}
+          {{ $borderHover = "group-hover:border-purple-500 dark:group-hover:border-purple-400" }}
+          {{ $textHover = "group-hover:text-purple-600 dark:group-hover:text-purple-400" }}
+        {{ else if eq .File.LogicalName "eye-of-horus.md" }}
+          {{ $bgClass = "bg-orange-50 dark:bg-orange-900/20" }}
+          {{ $borderHover = "group-hover:border-orange-500 dark:group-hover:border-orange-400" }}
+          {{ $textHover = "group-hover:text-orange-600 dark:group-hover:text-orange-400" }}
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="block group relative">
+          <div class="h-full {{ $bgClass }} rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 {{ $borderHover }}">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 {{ $textHover }} transition-colors">
+              {{ .Title }} 
+              {{ if eq .File.LogicalName "eye-of-horus.md" }}
+              <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-gradient-to-r from-orange-500 to-red-500 text-white ml-2 shadow-sm align-middle -mt-1">
+                <i class="fas fa-fire animate-pulse"></i> HOT
+              </span>
+              {{ end }}
+              <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              {{ .Summary }}
+            </p>
+          </div>
+        </a>
+        {{ end }}
+        
+      </div>
+    </div>
+
+    <!-- Roadmap Section -->
+    <div class="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100 dark:border-gray-700">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center flex items-center justify-center gap-4">
+        <i class="fas fa-route text-cyan-500"></i> Vision & Roadmap
+      </h2>
+      
+      <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 dark:before:via-gray-600 before:to-transparent">
+
+        <!-- Phase 1 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-gray-800 bg-green-500 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 transform -translate-x-1/2 z-10">
+            <i class="fas fa-check"></i>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] ml-14 md:ml-0 p-6 rounded-2xl bg-gray-50 dark:bg-gray-700/50 border border-gray-100 dark:border-gray-700 shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-gray-900 dark:text-white text-xl">Phase 1: Precision & Proof</h3>
+              <span class="text-sm font-medium text-green-600 dark:text-green-400">Completed</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">Tahut core integration, IDE-style Workspace, Sub-200ms Citation Snapping, Migration to OpenSearch/pgvector.</p>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-gray-800 bg-cyan-500 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 transform -translate-x-1/2 z-10">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] ml-14 md:ml-0 p-6 rounded-2xl bg-cyan-50 dark:bg-cyan-900/20 border border-cyan-100 dark:border-cyan-800 shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-gray-900 dark:text-white text-xl">Phase 2: Growth & Governance</h3>
+              <span class="text-sm font-medium text-cyan-600 dark:text-cyan-400">Current</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">Enterprise Identity Federation (SAML/OIDC), Headless API Integration (Expose Pyramids via JWT), Cognitive Agent Layer (ReAct/CoT), Cross-device Chat Session Sync, Distributed Worker scaling.</p>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-gray-800 bg-gray-300 dark:bg-gray-600 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 transform -translate-x-1/2 z-10">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] ml-14 md:ml-0 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700 border-dashed">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-gray-500 dark:text-gray-400 text-xl">Phase 3: The Intelligence OS</h3>
+              <span class="text-sm font-medium text-gray-500">Upcoming</span>
+            </div>
+            <ul class="text-gray-500 dark:text-gray-400 space-y-2 list-disc ml-4">
+              <li><strong>Unified AI Storage Expansion:</strong> Native support for MongoDB as an alternative all-in-one operational, vector, and document persistence engine.</li>
+              <li><strong>Knowledge Forking:</strong> Branch and clone specific Pyramids/Collections for isolated experimentation and reasoning workflows.</li>
+              <li><strong>Collection Composer Orchestrator:</strong> Treating distinct knowledge bases as tools—dispatching parallel agentic retrieval tasks and synthesizing unified answers via cognitive merging.</li>
+              <li><strong>Predictive Prompting:</strong> Dynamic, context-aware generation of AI-recommended follow-up queries based on the ongoing reasoning stream.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white dark:border-gray-800 bg-gray-300 dark:bg-gray-600 text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 transform -translate-x-1/2 z-10">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] ml-14 md:ml-0 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700 border-dashed">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-bold text-gray-500 dark:text-gray-400 text-xl">Phase 4: "Eye of Horus" Alerts</h3>
+              <span class="text-sm font-medium text-gray-500">Future</span>
+            </div>
+            <ul class="text-gray-500 dark:text-gray-400 space-y-2 list-disc ml-4 mb-4">
+              <li><strong>Active Intelligence Layer:</strong> Transforming the passive KMS repository into a dynamic, real-time monitoring and alerting engine.</li>
+              <li><strong>Declarative Rules Engine:</strong> Configuration-driven graph pattern matching via Neo4j Cypher and APOC triggers.</li>
+              <li><strong>Dual-Path Alert Streaming:</strong> Instant persistence to local dashboard alongside Kafka topic distribution for SIEM integration.</li>
+            </ul>
+            <a href="/tahut-kms/eye-of-horus/" class="inline-flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-semibold hover:text-cyan-700 dark:hover:text-cyan-300 transition-colors">
+              Go to Details <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{{ end }}

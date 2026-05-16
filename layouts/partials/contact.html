@@ -1,0 +1,266 @@
+<section id="contact" class="py-12 relative overflow-hidden bg-bg dark:bg-bg border-t border-gray-200/50 dark:border-white/10" data-animate>
+  <!-- Ambient glows -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="text-center mb-8 lg:mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-text-primary dark:text-text-primary mb-6">{{ i18n "contactFormLabel" }}</h2>
+      {{ if .Site.Params.calendly_url }}
+      {{ $calendlyIcon := resources.Get "images/calendly-icon.svg" }}
+      <div class="flex justify-center">
+        <button type="button" class="calendly-open-trigger group inline-flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-full font-semibold shadow-lg shadow-primary/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-bg">
+          {{ with $calendlyIcon }}<img src="{{ .RelPermalink }}" alt="" class="w-6 h-6 group-hover:scale-110 transition-transform" width="24" height="24">{{ end }}
+          <span>Book a meeting on my Calendly</span>
+        </button>
+      </div>
+      {{ end }}
+    </header>
+
+    <div class="flex flex-wrap -mx-4 justify-center">
+      <!-- Contact Form -->
+      <div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0 relative">
+        <div class="absolute -inset-0.5 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl blur opacity-30 transition duration-1000" aria-hidden="true"></div>
+        <div class="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-lg p-6 sm:p-10 h-full flex flex-col">
+          <h3 class="text-2xl font-bold mb-8 font-heading text-text-primary dark:text-text-primary">{{ i18n "sendMeAMessage" }}</h3>
+          
+          <form id="contact-form" action="" method="POST" class="flex-1 flex flex-col">
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <div class="flex flex-col sm:flex-row mb-5">
+              <div class="w-full sm:w-1/2 sm:pr-3 mb-5 sm:mb-0">
+                <label for="name" class="block text-sm font-medium text-text-secondary dark:text-text-secondary mb-1.5">{{ i18n "contactFormLabelNameLabel" }}</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-50 dark:bg-zinc-950 border border-gray-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors dark:text-text-primary placeholder-gray-400 shadow-sm" required>
+              </div>
+              <div class="w-full sm:w-1/2 sm:pl-3">
+                <label for="email" class="block text-sm font-medium text-text-secondary dark:text-text-secondary mb-1.5">{{ i18n "contactFormLabelEmailLabel" }}</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-50 dark:bg-zinc-950 border border-gray-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors dark:text-text-primary placeholder-gray-400 shadow-sm" required>
+              </div>
+            </div>
+            
+            <div class="mb-5">
+              <label for="subject" class="block text-sm font-medium text-text-secondary dark:text-text-secondary mb-1.5">{{ i18n "contactFormLabelSubjectLabel" }}</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-50 dark:bg-zinc-950 border border-gray-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors dark:text-text-primary placeholder-gray-400 shadow-sm" required>
+            </div>
+            
+            <div class="mb-6 flex-1 flex flex-col">
+              <label for="message" class="block text-sm font-medium text-text-secondary dark:text-text-secondary mb-1.5">{{ i18n "contactFormLabelMessageLabel" }}</label>
+              <textarea id="message" name="message" rows="5" class="w-full flex-1 px-4 py-3 bg-gray-50 dark:bg-zinc-950 border border-gray-300 dark:border-zinc-700 rounded-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors dark:text-text-primary placeholder-gray-400 shadow-sm resize-y" required></textarea>
+            </div>
+            
+            <div>
+              <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-primary text-white rounded-md font-medium shadow-md transition-all duration-300 hover:bg-opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-900">
+                <span class="mr-2">{{ i18n "contactFormSendBtnLabel" }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="w-full lg:w-1/2 px-4 relative">
+        <div class="absolute -inset-0.5 bg-gradient-to-tl from-primary/20 to-accent/20 rounded-xl blur opacity-30 transition duration-1000" aria-hidden="true"></div>
+        {{ with .Site.GetPage "contact" }}
+        <div class="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-lg p-6 sm:p-10 h-full flex flex-col">
+          <h3 class="text-2xl font-bold mb-6 font-heading text-text-primary dark:text-text-primary">{{ i18n "contactInformation" }}</h3>
+          
+          <div class="prose max-w-none prose-p:text-base dark:prose-invert prose-gray prose-p:text-text-secondary dark:prose-p:text-text-secondary mb-8">
+            <p>{{ replace .Params.intro "[YRS_EXP]" (partial "years_exp.html" .) }}</p>
+            {{ .Params.Content | markdownify }}
+          </div>
+
+          <div class="flex-1">
+            {{ if .Site.Params.email }}
+            <a href="mailto:{{ .Site.Params.email }}" class="flex items-center p-5 mb-4 hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg border border-gray-100 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm relative group" onclick="copyContactEmail(event, '{{ .Site.Params.email }}')">
+              <div class="flex-shrink-0 text-primary w-8 text-center mr-5">
+                <i class="fas fa-envelope text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-1">Email</p>
+                <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{{ .Site.Params.email }}</p>
+              </div>
+            </a>
+            {{ end }}
+
+            {{ if .Site.Params.linkedin_url }}
+            <a href="{{ .Site.Params.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="flex items-center p-5 mb-4 hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg border border-gray-100 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm">
+              <div class="flex-shrink-0 text-[#0077b5] w-8 text-center mr-5">
+                <i class="fab fa-linkedin-in text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-1">LinkedIn</p>
+                <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{{ .Site.Params.linkedin_text }}</p>
+              </div>
+            </a>
+            {{ end }}
+
+            {{ if .Site.Params.github_url }}
+            <a href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" class="flex items-center p-5 mb-4 hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg border border-gray-100 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm">
+              <div class="flex-shrink-0 text-gray-900 dark:text-white w-8 text-center mr-5">
+                <i class="fab fa-github text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-1">GitHub</p>
+                <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{{ .Site.Params.github_text }}</p>
+              </div>
+            </a>
+            {{ end }}
+
+            {{ if .Site.Params.medium_url }}
+            <a href="{{ .Site.Params.medium_url }}" target="_blank" rel="noopener noreferrer" class="flex items-center p-5 mb-4 hover:bg-gray-50 dark:hover:bg-zinc-800/50 rounded-lg border border-gray-100 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shadow-sm">
+              <div class="flex-shrink-0 text-black dark:text-white w-8 text-center mr-5">
+                <i class="fab fa-medium text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-1">Medium</p>
+                <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{{ .Site.Params.medium_text }}</p>
+              </div>
+            </a>
+            {{ end }}
+
+            {{ if .Site.Language.Params.hero_location }}
+            <div class="flex items-center p-5 rounded-lg border border-transparent">
+              <div class="flex-shrink-0 text-gray-400 w-8 text-center mr-5">
+                <i class="fas fa-map-marker-alt text-2xl"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-1">Location</p>
+                <p class="text-sm md:text-base font-semibold text-gray-900 dark:text-white">{{ .Site.Language.Params.hero_location }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ if .Site.Params.calendly_url }}
+  <div id="calendly-modal" class="fixed inset-0 bg-bg bg-opacity-50 hidden items-center justify-center px-4 py-8" aria-modal="true" aria-labelledby="calendly-modal-title">
+    <div class="bg-bg dark:bg-bg rounded-xl shadow-2xl w-full max-w-5xl lg:max-w-6xl max-h-[85vh] lg:max-h-[90vh] overflow-y-auto sidebar-scroll">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h3 id="calendly-modal-title" class="text-2xl font-bold text-text-primary dark:text-text-primary">Schedule a Call</h3>
+          <button id="calendly-close" type="button" class="text-text-muted text-text-secondary dark:text-text-muted text-2xl font-bold">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        {{ $height := default "600px" .Site.Params.calendly_height }}
+        <div class="calendly-inline-widget" data-url="{{ .Site.Params.calendly_url }}" {{ printf `style="min-width:320px;height:%s;"` $height | safeHTMLAttr }}></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  {{ end }}
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        
+        // Get Formspree endpoint from secure configuration
+        const formspreeEndpoint = window.FORMSPREE_ENDPOINT;
+        
+        if (!formspreeEndpoint) {
+          showToast('⚠️ Contact form not configured. Please try again later.');
+          return;
+        }
+        
+        const formData = new FormData(form);
+    
+        try {
+          const response = await fetch(formspreeEndpoint, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+    
+          if (response.ok) {
+            showToast('✅ Thank you! I\'ll get back to you soon.');
+            form.reset();
+          } else {
+            showToast('❌ Error: Please try again.');
+          }
+        } catch (error) {
+          console.error(error);
+          showToast('⚠️ Failed to submit.');
+        }
+      });
+    }
+
+    const calendlyModal = document.getElementById('calendly-modal');
+    const calendlyClose = document.getElementById('calendly-close');
+
+    if (calendlyModal && calendlyClose) {
+      function openCalendlyModal() {
+        calendlyModal.classList.remove('hidden');
+        calendlyModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+      document.querySelectorAll('.calendly-open-trigger').forEach(function (el) {
+        el.addEventListener('click', openCalendlyModal);
+      });
+
+      function closeCalendlyModal() {
+        calendlyModal.classList.add('hidden');
+        calendlyModal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+
+      calendlyClose.addEventListener('click', closeCalendlyModal);
+
+      calendlyModal.addEventListener('click', function (e) {
+        if (e.target === calendlyModal) {
+          closeCalendlyModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !calendlyModal.classList.contains('hidden')) {
+          closeCalendlyModal();
+        }
+      });
+    }
+  
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.textContent = message;
+      toast.className = 'fixed bottom-6 right-6 bg-second dark:bg-second-light text-white px-4 py-2 rounded shadow-lg';
+      document.body.appendChild(toast);
+  
+      setTimeout(() => {
+        toast.remove();
+      }, 4000);
+    }
+    
+    window.copyContactEmail = function(e, email) {
+      e.preventDefault();
+      
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).then(() => {
+          showToast('Email copied to clipboard!');
+        });
+      }
+      
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = 'mailto:' + email;
+      document.body.appendChild(iframe);
+      setTimeout(() => iframe.remove(), 1000);
+    };
+  });
+</script>
+

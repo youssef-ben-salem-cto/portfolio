@@ -1,0 +1,69 @@
+<!-- Technical Skills Section -->
+<section id="technical" class="py-12 bg-bg dark:bg-bg border-t border-gray-200/50 dark:border-white/10" data-animate>
+  <!-- Ambient glows -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute top-1/4 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Site.GetPage "technical" }}
+      <!-- Section heading -->
+      <header class="text-center mb-8 lg:mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-text-primary dark:text-text-primary mb-4">{{ .Title }}</h2>
+        <p class="text-lg text-text-secondary dark:text-text-tertiary italic">{{ replace .Params.intro "[YRS_EXP]" (partial "years_exp.html" .) }}</p>
+      </header>
+
+      <!-- Technical skills groups in cards -->
+      <div class="flex flex-wrap -mx-4 justify-center">
+        {{ range $i, $group := .Params.technical_groups }}
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 relative">
+          <div class="absolute -inset-0.5 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl blur opacity-30 transition duration-1000" aria-hidden="true"></div>
+          <div class="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-lg p-6 sm:p-8 h-full flex flex-col transition-transform duration-300 hover:-translate-y-1">
+            
+            <!-- Card header with title only -->
+            <div class="mb-8 text-center border-b border-gray-100 dark:border-zinc-800 pb-4">
+              <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary tracking-wide">{{ $group.title }}</h3>
+            </div>
+            
+            <!-- Skills flex layout with icons and text below -->
+            <div class="flex flex-wrap justify-center -mx-2">
+              {{ range $group.skills }}
+              <div class="w-1/3 px-2 mb-6 flex flex-col items-center text-center">
+                {{ if .devicon_name }}
+                  {{ $style := .devicon_style | default "original" }}
+                  {{ $defaultInvertOnDark := slice "nextjs" "github" "ollama" "keras" "prisma" }}
+                  {{ $invertOnDark := or (.invert_on_dark) (in $defaultInvertOnDark .devicon_name) }}
+                  <div class="w-14 h-14 flex items-center justify-center mb-3 p-2.5 bg-gray-50 dark:bg-zinc-800/50 rounded-xl border border-gray-100 dark:border-zinc-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-primary/30 dark:hover:border-primary/50">
+                    <img alt="{{ .name }}"
+                         width="40"
+                         height="40"
+                         loading="lazy"
+                         class="w-full h-full object-contain {{ if $invertOnDark }}dark:invert dark:brightness-200{{ end }}"
+                         data-animation="skill-icon"
+                         data-devicon-name="{{ .devicon_name }}"
+                         data-devicon-style="{{ $style }}"
+                         data-fa-icon="{{ .icon }}" />
+                  </div>
+                {{ else }}
+                  <!-- Fallback to FontAwesome with random colors -->
+                  {{ $colors := slice "text-blue-500" "text-green-500" "text-purple-500" "text-red-500" "text-yellow-500" "text-indigo-500" "text-pink-500" "text-teal-500" "text-orange-500" "text-cyan-500" }}
+                  {{ $randomColor := index $colors (mod (add (mul (len $colors) 7) (len .name)) (len $colors)) }}
+                  <div class="w-14 h-14 flex items-center justify-center mb-3 p-2.5 bg-gray-50 dark:bg-zinc-800/50 rounded-xl border border-gray-100 dark:border-zinc-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:border-primary/30 dark:hover:border-primary/50">
+                    <i class="fas fa-{{ .icon }} text-2xl {{ $randomColor }}"
+                       data-animation="skill-icon"
+                       aria-hidden="true"></i>
+                  </div>
+                {{ end }}
+                <span class="text-xs md:text-sm font-semibold text-text-secondary dark:text-gray-400">{{ .name }}</span>
+              </div>
+              {{ end }}
+            </div>
+            
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section> 

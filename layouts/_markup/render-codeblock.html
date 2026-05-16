@@ -1,0 +1,13 @@
+<div class="premium-code-card">
+  <div class="card-header">
+    <div class="mac-controls">
+      <span class="mac-btn close"></span>
+      <span class="mac-btn minimize"></span>
+      <span class="mac-btn maximize"></span>
+    </div>
+    <div class="lang-label">{{ if .Type }}{{ .Type | upper }}{{ else }}CODE{{ end }}</div>
+  </div>
+  <div class="card-body">
+    {{ highlight .Inner .Type "" }}
+  </div>
+</div>

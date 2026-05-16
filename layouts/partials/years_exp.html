@@ -1,0 +1,7 @@
+{{ $start := time "2006-02-01" }}
+{{ $now := now }}
+{{ $years := sub $now.Year $start.Year }}
+{{ if or (lt $now.Month $start.Month) (and (eq $now.Month $start.Month) (lt $now.Day $start.Day)) }}
+  {{ $years = sub $years 1 }}
+{{ end }}
+{{ return $years }}

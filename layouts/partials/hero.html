@@ -1,0 +1,63 @@
+<section id="home" class="flex items-center justify-center gradient-bg relative overflow-hidden hero-section">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16 pb-8">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
+      <!-- Left content - Profile image -->
+      <div class="lg:w-1/2 flex justify-center lg:justify-start mt-8 md:mt-0">
+        <div class="relative" data-animation="profile-image">
+          <!-- Main image container -->
+          <div class="relative">
+            <div class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-primary p-1 shadow-2xl">
+              <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                <img 
+                  src="{{ .Site.Params.profile_image }}" 
+                  alt="Portrait of {{ .Site.Params.name }}" 
+                  loading="lazy" 
+                  decoding="async" 
+                  class="object-cover w-full h-full rounded-full"
+                />
+              </div>
+            </div>
+
+            <!-- Location badge -->
+            <div class="absolute -bottom-4 -right-4" data-animation="location-badge">
+              <div class="flex items-center bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full shadow-xl border border-white/20 min-w-fit whitespace-nowrap">
+                <i class="fas fa-map-marker-alt mr-2 text-primary-light flex-shrink-0"></i>
+                <span class="font-semibold text-sm">{{ .Site.Params.hero_location }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right content -->
+      <div class="text-center lg:text-left mt-8 md:mt-0" style="width: 100%; max-width: 600px; min-width: 300px;">
+        <!-- Greeting -->
+        <div class="mb-4 mt-4 md:mt-0 hero-text-element" data-animation="greeting">
+          <span class="font-medium text-lg block text-primary dark:text-primary-light">{{ i18n "helloIm" }}</span>
+        </div>
+        <!-- Name -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading leading-tight hero-name hero-text-element text-text-primary dark:text-text-primary" data-animation="name">
+          {{ .Site.Params.firstName }} {{ .Site.Params.lastName }}
+        </h1>
+        <!-- Tagline with typing effect -->
+        <h2 class="text-2xl md:text-3xl lg:text-4xl mb-6 font-light hero-text-element text-text-secondary dark:text-text-secondary" data-animation="tagline">
+          <span class="typewriter" data-original-text="{{ .Site.Params.tagline }}" data-typewriter-texts='["CTO | AI & Cloud Native Expert", "Cloud Native & DevOps", "Agentic AI & GenAI", "System Architecture", "Technical Management (CTO)"]'>{{ .Site.Params.tagline }}</span>
+        </h2>
+        <!-- Description -->
+        <div class="relative mb-4 max-w-2xl mx-auto lg:mx-0 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 backdrop-blur-sm shadow-md" style="padding: 2rem;" data-animation="description">
+          <p class="text-lg md:text-xl leading-relaxed hero-text-element text-zinc-800 dark:text-zinc-200" style="margin: 0;">
+            {{ replace .Site.Params.hero_description "[YRS_EXP]" (partial "years_exp.html" .) }}
+          </p>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end hero-text-element mb-4" data-animation="buttons">
+          <a href="#contact" class="bg-gradient-primary text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover w-full sm:w-auto text-center shadow-lg">
+            {{ i18n "getInTouch" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+  

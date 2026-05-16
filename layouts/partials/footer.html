@@ -1,0 +1,93 @@
+<footer class="relative overflow-hidden bg-bg dark:bg-bg border-t border-gray-200/50 dark:border-white/10 mt-20">
+  <!-- Optional ambient glow for glassmorphic feel -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-12 right-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16">
+      
+      <!-- Left Column: Brand & Description -->
+      <div class="lg:w-5/12 space-y-6">
+        <div>
+          <a href="/#home" class="text-2xl font-bold font-heading bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+            {{ .Site.Language.Params.firstName }} {{ .Site.Language.Params.lastName }}
+          </a>
+          <p class="text-sm font-medium text-primary mt-1">{{ .Site.Language.Params.tagline }}</p>
+        </div>
+        
+        <p class="text-text-secondary dark:text-text-secondary leading-relaxed">
+          {{ replace .Site.Language.Params.hero_description "[YRS_EXP]" (partial "years_exp.html" .) }}
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-text-secondary dark:text-text-secondary pt-2">
+          <span class="inline-flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            {{ .Site.Language.Params.hero_location }}
+          </span>
+          <a href="mailto:{{ .Site.Params.email }}" class="inline-flex items-center gap-1.5 hover:text-primary dark:hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            {{ .Site.Params.email }}
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Expertise & Connect -->
+      <div class="lg:w-6/12 flex flex-col md:flex-row justify-between gap-10">
+        
+        <!-- Expertise / Tags -->
+        <div class="flex-1">
+          <h3 class="text-sm font-semibold text-text-primary dark:text-text-primary tracking-wider uppercase mb-6">Expertise Focus</h3>
+          <div class="flex flex-wrap gap-2">
+            {{ range .Site.Language.Params.collab_tags }}
+            {{ $isPriority := or (eq . "Urgent") (eq . "Priority") (eq . "Leadership") (eq . "Management") }}
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border
+                       {{ if $isPriority }}
+                         bg-primary/10 border-primary/20 text-primary dark:text-primary-light
+                       {{ else }}
+                         bg-white/50 dark:bg-zinc-800/50 border-gray-200/50 dark:border-white/10 text-text-secondary dark:text-text-secondary backdrop-blur-sm
+                       {{ end }} transition-colors hover:bg-gray-50 dark:hover:bg-zinc-700/50 cursor-default">
+              {{ . }}
+            </span>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Social & Connectivity -->
+        <div>
+          <h3 class="text-sm font-semibold text-text-primary dark:text-text-primary tracking-wider uppercase mb-6">Connect</h3>
+          <div class="flex flex-wrap gap-3" data-animation="social">
+            {{ range .Site.Params.social }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" 
+               aria-label="{{ .icon }} profile"
+               class="group inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-zinc-800/50 border border-gray-200/50 dark:border-white/10 
+                      text-text-secondary dark:text-text-secondary hover:text-primary dark:hover:text-primary-light backdrop-blur-sm
+                      hover:bg-white dark:hover:bg-zinc-700 hover:shadow-md hover:border-primary/30 
+                      transition-all duration-300 hover:-translate-y-1
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <i class="{{ .prefix | default "fab" }} fa-{{ .icon }} text-lg"></i>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-16 pt-8 border-t border-gray-200/50 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-text-tertiary dark:text-text-tertiary">
+      <p>© {{ time.Now.Year }} | {{ .Site.Params.copyright }}</p>
+      <div class="flex items-center gap-6">
+        <a href="/#home" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Home</a>
+        <a href="{{ "/about" | relURL }}" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">About</a>
+        <a href="mailto:{{ .Site.Params.email }}" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>

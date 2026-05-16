@@ -1,0 +1,22 @@
+<div class="premium-mermaid-card relative group">
+  <div class="card-header">
+    <div class="mac-controls">
+      <span class="mac-btn close"></span>
+      <span class="mac-btn minimize"></span>
+      <span class="mac-btn maximize"></span>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="lang-label">SVG</div>
+      <button class="fullscreen-toggle-btn opacity-0 group-hover:opacity-100 transition-opacity text-text-secondary hover:text-primary dark:text-text-muted dark:hover:text-primary-light" aria-label="Toggle Fullscreen" onclick="toggleFullscreen(this)">
+        <i class="fas fa-expand"></i>
+      </button>
+    </div>
+  </div>
+  <div class="card-body relative">
+    <div class="w-full flex justify-center">
+      {{ $src := .Get "src" }}
+      {{ $alt := .Get "alt" | default "Excalidraw Diagram" }}
+      <img src="{{ $src }}" alt="{{ $alt }}" class="w-full h-auto max-w-full" style="max-height: 80vh; object-fit: contain;">
+    </div>
+  </div>
+</div>

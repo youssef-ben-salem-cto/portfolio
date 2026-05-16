@@ -1,0 +1,148 @@
+{{ define "main" }}
+<div class="min-h-screen bg-bg dark:bg-gray-900 pt-24 pb-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Breadcrumb -->
+    <nav class="flex mb-8 text-sm font-medium text-gray-500 dark:text-gray-400" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+          <a href="/tahut-kms/" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors flex items-center gap-2">
+            <i class="fas fa-layer-group"></i> Tahut KMS
+          </a>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <i class="fas fa-chevron-right text-xs mx-2"></i>
+            <span class="text-gray-900 dark:text-gray-200">{{ .Title }}</span>
+          </div>
+        </li>
+      </ol>
+    </nav>
+
+    <article class="bg-white dark:bg-gray-800 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 dark:border-gray-700">
+      <header class="mb-10 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          {{ .Title }}
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-400">
+          {{ .Summary }}
+        </p>
+      </header>
+
+      <div class="prose prose-lg dark:prose-invert max-w-none prose-headings:text-cyan-700 dark:prose-headings:text-cyan-400 prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-gray-200 dark:prose-img:border-gray-700">
+        {{ .Content }}
+      </div>
+    </article>
+    
+  </div>
+</div>
+
+<!-- Image Zoom Lightbox Modal -->
+<div id="image-lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-sm cursor-zoom-out">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-gray-300 focus:outline-none z-[110]">
+    <i class="fas fa-times text-3xl"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="Zoomed Image" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
+</div>
+
+<!-- Support for Mermaid diagrams and Image Lightbox -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  
+  // Convert standard Markdown mermaid blocks into beautiful styled UI cards
+  document.querySelectorAll('pre > code.language-mermaid').forEach(el => {
+    const parent = el.parentElement;
+    const mermaidDiv = document.createElement('div');
+    mermaidDiv.className = "mermaid bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm overflow-x-auto text-center my-6 w-full";
+    mermaidDiv.textContent = el.textContent;
+    parent.replaceWith(mermaidDiv);
+  });
+
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: document.documentElement.classList.contains('dark') ? 'dark' : 'default',
+    flowchart: { htmlLabels: true, padding: 25 },
+    themeVariables: {
+      fontFamily: 'ui-sans-serif, system-ui, -apple-system, sans-serif',
+      primaryColor: '#06b6d4',
+      primaryTextColor: '#fff',
+      primaryBorderColor: '#0891b2',
+      lineColor: '#64748b',
+      secondaryColor: '#3b82f6',
+      tertiaryColor: '#f1f5f9'
+    }
+  });
+
+  // Re-render on theme toggle
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'class') {
+        location.reload(); 
+      }
+    });
+  });
+  observer.observe(document.documentElement, { attributes: true });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("article img");
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.getElementById("lightbox-close");
+
+    // Enhance images with hover overlay
+    images.forEach(img => {
+      // Create wrapper if not already wrapped properly
+      const wrapper = document.createElement("div");
+      wrapper.className = "relative group cursor-zoom-in inline-block w-full";
+      
+      // Insert wrapper before image in the DOM
+      img.parentNode.insertBefore(wrapper, img);
+      
+      // Move image into wrapper
+      wrapper.appendChild(img);
+      
+      // Create overlay with icon
+      const overlay = document.createElement("div");
+      overlay.className = "absolute inset-0 bg-gray-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-lg pointer-events-none";
+      overlay.innerHTML = '<i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>';
+      wrapper.appendChild(overlay);
+
+      // Add click listener
+      wrapper.addEventListener("click", (e) => {
+        e.stopPropagation();
+        lightboxImg.src = img.src;
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+        // Trigger reflow for transition
+        void lightbox.offsetWidth;
+        lightbox.classList.remove("opacity-0");
+        lightboxImg.classList.remove("scale-95");
+        lightboxImg.classList.add("scale-100");
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.add("opacity-0");
+      lightboxImg.classList.remove("scale-100");
+      lightboxImg.classList.add("scale-95");
+      setTimeout(() => {
+        lightbox.classList.add("hidden");
+        lightbox.classList.remove("flex");
+        lightboxImg.src = "";
+      }, 300);
+    };
+
+    lightbox.addEventListener("click", closeLightbox);
+    closeBtn.addEventListener("click", closeLightbox);
+    
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
+        closeLightbox();
+      }
+    });
+  });
+</script>
+
+{{ end }}

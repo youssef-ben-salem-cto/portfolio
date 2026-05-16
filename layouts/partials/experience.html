@@ -1,0 +1,137 @@
+<section id="experience" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Site.GetPage "experience" }}
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-white">{{ .Title }}</h2>
+    <p class="text-lg text-center mb-6 text-text-secondary dark:text-gray-400 italic">{{ replace .Params.intro "[YRS_EXP]" (partial "years_exp.html" .) }}</p>
+
+    <!-- Resume Download Buttons -->
+    <div class="text-center mb-10">
+      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
+        {{ $resumeLabel := .Params.resume_label }}
+        {{ $buttonClass := "flex items-center justify-center bg-gradient-primary text-white text-sm sm:text-base px-6 py-3.5 rounded-lg font-semibold shadow-lg w-auto sm:w-auto transition-transform hover:-translate-y-1" }}
+      
+        {{/* Build language → resume_url lookup map */}}
+        {{ $resumeMap := dict }}
+        {{ range .Site.Languages }}
+          {{ $lang := .Lang }}
+          {{ with .Params.resume_url }}
+            {{ $resumeMap = merge $resumeMap (dict $lang .) }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Render buttons in desired order */}}
+        {{ range .Params.resume_downloads }}
+          {{ $item := . }}
+          {{ with index $resumeMap $item.lang }}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="{{ $buttonClass }} button-hover">
+              <i class="fas fa-file-pdf text-xl mr-3"></i>
+              {{ i18n "downloadResume" }} ({{ $item.label }})
+            </a>
+          {{ end }}
+        {{ end }}
+
+      </div>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="relative pt-4">
+      <!-- Timeline line -->
+      <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 transform -translate-x-1/2 shadow-lg z-0 timeline-line"></div>
+
+      <!-- Timeline items -->
+      <div class="space-y-8 md:space-y-16">
+        {{ range $index, $exp := .Params.positions }}
+        <div class="relative timeline-item" data-animate>
+          <!-- Timeline bullet -->
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          <!-- Period badge - visible on mobile first, outside flex container -->
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>{{ $exp.period }}
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            <!-- Company info card -->
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                <!-- Company info -->
+                <div class="relative group">
+                  <div class="absolute -inset-0.5 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000" aria-hidden="true"></div>
+                  <div class="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-lg p-6 sm:p-8 transition-transform duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-heading font-bold text-text-primary dark:text-white mb-2">
+                      {{ if $exp.company_url }}
+                      <a href="{{ $exp.company_url }}" target="_blank" rel="noopener noreferrer" class="company-link group inline-flex items-center">
+                        {{ $exp.company }}
+                        <i class="fas fa-external-link-alt ml-2 text-primary opacity-0 group-hover:opacity-100 transition-opacity text-sm"></i>
+                      </a>
+                      {{ else }}
+                      {{ $exp.company }}
+                      {{ end }}
+                    </h3>
+                    <h4 class="text-primary dark:text-gray-300 font-semibold text-lg mb-4">{{ $exp.role }}</h4>
+                    
+                    <!-- Industry and Location tags -->
+                    <div class="flex flex-wrap gap-2 mb-5">
+                      {{ if $exp.industry }}
+                      <span class="inline-flex items-center bg-green-50 text-green-700 dark:bg-green-900/40 dark:text-green-300 px-3 py-1 rounded-full text-xs font-semibold border border-green-200 dark:border-green-700/50">
+                        <i class="fas fa-industry mr-1.5"></i>{{ $exp.industry }}
+                      </span>
+                      {{ end }}
+                      {{ if $exp.location }}
+                      <span class="inline-flex items-center bg-gray-100 text-gray-700 dark:bg-zinc-800 dark:text-gray-200 px-3 py-1 rounded-full text-xs font-semibold border border-gray-200 dark:border-zinc-600">
+                        <i class="fas fa-map-marker-alt mr-1.5"></i>{{ $exp.location }}
+                      </span>
+                      {{ end }}
+                      {{ if $exp.award }}
+                      <span class="inline-flex items-center bg-yellow-50 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300 px-3 py-1 rounded-full text-xs font-semibold border border-yellow-200 dark:border-yellow-700/50">
+                        <i class="fas fa-trophy mr-1.5"></i>{{ $exp.award }}
+                      </span>
+                      {{ end }}
+                    </div>
+                    
+                    <!-- Company description -->
+                    {{ if $exp.company_description }}
+                    <p class="text-sm text-text-secondary dark:text-gray-400 italic border-l-2 border-primary/50 pl-3">
+                      {{ $exp.company_description }}
+                    </p>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key achievements card -->
+            <div class="md:w-1/2 px-4">
+              <!-- Period badge - hidden on mobile, visible on desktop -->
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>{{ $exp.period }}
+              </div>
+              
+              <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-tl from-primary/10 to-accent/10 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000" aria-hidden="true"></div>
+                <div class="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-lg p-6 sm:p-8 transition-transform duration-300 hover:-translate-y-1">
+                  <div class="flex items-center mb-5 border-b border-gray-100 dark:border-zinc-800 pb-3">
+                    <i class="fas fa-tasks text-primary dark:text-primary-light mr-3 text-lg"></i>
+                    <h5 class="text-lg font-semibold text-text-primary dark:text-white tracking-wide">{{ i18n "keyAchievements" }}</h5>
+                  </div>
+                  <ul class="space-y-4 text-text-secondary dark:text-gray-300 text-sm md:text-base">
+                    {{ range $exp.bullet_points }}
+                    <li class="flex items-start">
+                      <i class="fas fa-check-circle text-accent mr-3 mt-1 flex-shrink-0"></i>
+                      <span>{{ . | markdownify }}</span>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

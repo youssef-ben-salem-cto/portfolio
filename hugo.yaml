@@ -1,0 +1,137 @@
+baseURL: "https://youssef-bensalem.com"
+languageCode: "en-us"
+title: "Youssef Ben Salem"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    contentDir: "content/en"
+    languageName: "English"
+    weight: 1
+    params:
+      tagline: "CTO | AI & Cloud Native Expert"
+      hero_description: "Visionary technology leader with [YRS_EXP]+ years of experience, combining deep technical expertise and executive leadership. Currently CTO at MINT-IT, driving innovation strategy, scalable architecture design, and Agentic AI integration."
+      hero_location: "Tunisia"
+      collab_tags:
+        - "Agentic AI"
+        - "Cloud Native"
+        - "Software Architecture"
+    menu:
+      main:
+        - name: "Skills"
+          url: "#skills"
+          weight: 20
+        - name: "Experience"
+          url: "#experience"
+          weight: 30
+        - name: "Technical"
+          url: "#technical"
+          weight: 40
+        - name: "Projects"
+          url: "/projects/"
+          weight: 50
+        # - name: "Blog"
+        #   url: "/blog/"
+        #   weight: 60
+        - name: "Contact"
+          url: "#contact"
+          weight: 70
+
+build:
+  writeStats: true
+
+enableRobotsTXT: true
+
+sitemap:
+  changefreq: "weekly"
+  priority: 0.8
+  filename: "sitemap.xml"
+
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: hugo_stats.json
+      target: assets/watching/hugo_stats.json
+
+params:
+  name: "Youssef Ben Salem"
+  firstName: "Youssef"
+  lastName: "Ben Salem"
+  profile_image: "/images/profil.jpg"
+  email: "youssef.ben.salem@gmail.com"
+  author: "Youssef Ben Salem"
+  description: "Portfolio of Youssef Ben Salem - CTO, Software Architect, AI Expert"
+  linkedin_url: "https://www.linkedin.com/in/youssef-ben-salem-cto/"
+  linkedin_text: "linkedin.com/in/youssef-ben-salem-cto"
+  # github_url: "https://github.com/youssef-bensalem"
+  # github_text: "github.com/youssef-bensalem"
+  # medium_url: "https://medium.com/@youssef_bensalem"
+  # medium_text: "medium.com/@youssef_bensalem"
+  calendly_url: ""
+  copyright: "© 2026 | Youssef Ben Salem"
+  resume_url_en: "/CV2026.pdf"
+  resume_label: "View CV"
+  sectionPagesMenu: "main"
+  og_image: "/images/og-default.jpg"
+
+  social:
+    - icon: "linkedin-in"
+      url: "https://www.linkedin.com/in/youssef-ben-salem-cto/"
+    # - icon: "github"
+    #   url: "https://github.com/youssef-bensalem"
+    # - icon: "medium"
+    #   url: "https://medium.com/@youssef_bensalem"
+    - icon: "envelope"
+      prefix: "fas"
+      url: "mailto:youssef.ben.salem@gmail.com"
+
+  color_palettes:
+    palette:
+      - name: "professional"
+        main_color: "#474A51"
+        second_color: "#E52521"
+        third_color: "#3CB043"
+      - name: "ocean"
+        main_color: "#1E40AF"
+        second_color: "#06B6D4"
+        third_color: "#10B981"
+      - name: "steel"
+        main_color: "#374151"
+        second_color: "#6B7280"
+        third_color: "#10B981"
+      - name: "slate"
+        main_color: "#475569"
+        second_color: "#0EA5E9"
+        third_color: "#F97316"
+
+  pexels:
+    queries:
+      - "long span bridges"
+      - "skyscrapers"
+      - "sky and clouds"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: "monokai"
+
+server:
+  headers:
+    - for: "/**/*.css"
+      values:
+        Content-Type: "text/css"
+
+security:
+  funcs:
+    getenv:
+      - "^HUGO_"
+      - "^CI$"

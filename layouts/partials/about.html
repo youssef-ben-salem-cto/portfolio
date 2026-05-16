@@ -1,0 +1,102 @@
+<section id="about" class="py-12 bg-bg dark:bg-bg relative about-section" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary about-text-element">{{ i18n "aboutMe" }}</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      <div class="about-text-element h-full">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-8 rounded-xl shadow-lg border border-border-primary dark:border-border-primary h-full flex flex-col justify-between">
+          <div class="prose max-w-none text-lg text-text-secondary dark:text-text-secondary leading-relaxed">
+            {{ with .Site.GetPage "about" }}{{ replace .Params.intro "[YRS_EXP]" (partial "years_exp.html" .) | markdownify }}{{ end }}
+          </div>
+          <div class="mt-8">
+            <a href="{{ $.Site.Params.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-primary text-white px-5 py-2.5 rounded-lg shadow-lg about-button button-hover font-semibold">
+              <i class="fab fa-linkedin-in mr-3 text-lg"></i> 
+              {{ i18n "connectOnLinkedIn" }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="h-full">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-8 rounded-xl shadow-lg border border-border-primary dark:border-border-primary about-card card-hover h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6 border-b border-border-primary dark:border-border-primary pb-4">
+          <h3 class="text-xl font-semibold font-heading text-text-primary dark:text-text-primary flex items-center about-text-element">
+            <i class="fas fa-info-circle mr-3 text-primary dark:text-white"></i>
+            {{ i18n "quickFacts" }}
+          </h3>
+          <button id="aboutModalBtn" class="bg-gradient-primary text-white px-5 py-2 rounded-lg shadow-lg font-semibold flex items-center about-button text-sm button-hover">
+            <i class="fas fa-book-open mr-2"></i>
+            {{ i18n "more" }}
+          </button>
+        </div>
+        <div class="space-y-4 flex-grow overflow-y-auto">
+          {{ with .Site.GetPage "about" }}
+            {{ range $index, $fact := .Params.quickfacts }}
+              <div class="flex items-start quick-fact-card about-text-element">
+                <i class="fas fa-{{ $fact.icon }} text-primary dark:text-white text-lg mr-3 mt-1"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-text-primary dark:text-text-primary mb-1 text-base">{{ $fact.title }}</h4>
+                  <p class="text-text-secondary dark:text-text-tertiary text-sm leading-relaxed">{{ $fact.value | markdownify }}</p>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  {{ with .Site.GetPage "about" }}
+  <div id="aboutModal" class="fixed inset-0 bg-bg bg-opacity-50 z-50 hidden items-center justify-center px-4 py-16">
+    <div class="bg-bg dark:bg-bg rounded-xl shadow-2xl w-full max-w-5xl lg:max-w-6xl max-h-[70vh] lg:max-h-[80vh] overflow-y-auto sidebar-scroll">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary">{{ i18n "aboutName" }} {{ .Site.Params.name }}</h3>
+          <button id="closeAboutModal" class="text-text-muted text-text-secondary dark:text-text-muted text-2xl font-bold hover:text-primary transition-colors">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="space-y-6 text-text-secondary dark:text-text-secondary prose max-w-none dark:prose-invert">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('aboutModal');
+  const modalBtn = document.getElementById('aboutModalBtn');
+  const closeBtn = document.getElementById('closeAboutModal');
+
+  if(modalBtn && modal && closeBtn) {
+    modalBtn.addEventListener('click', function() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  }
+});
+</script>

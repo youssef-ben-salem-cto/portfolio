@@ -1,0 +1,31 @@
+<figure class="group relative my-8 overflow-hidden rounded-xl glass-light dark:glass p-8 shadow-sm dark:shadow-2xl transition-all hover:bg-white/90 dark:hover:bg-zinc-900/80">
+<!-- Metadata Bar -->
+<div class="flex items-center gap-3 mb-4">
+<div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-500 animate-pulse"></div>
+<span class="font-mono text-xs text-blue-700 dark:text-blue-400 tracking-wider font-semibold">
+{{ .Get "classification" | default "SECURE CONNECTION" }}
+</span>
+</div>
+
+<!-- Content Payload -->
+<div class="bg-white dark:bg-zinc-950/50 border border-zinc-100 dark:border-zinc-800/50 rounded shadow-inner dark:shadow-none p-4">
+{{ if eq (.Get "type") "diagram" }}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "Architecture diagram" }}
+<img src="{{ $src }}" alt="{{ $alt }}" class="w-full h-auto rounded-sm border border-zinc-200 dark:border-zinc-800" loading="lazy" />
+{{ else if eq (.Get "type") "code" }}
+<div class="text-sm font-mono text-zinc-600 dark:text-zinc-300 overflow-x-auto">
+{{ .Inner }}
+</div>
+{{ else }}
+<!-- Default to Inner if no type specified -->
+<div class="text-sm font-mono text-zinc-600 dark:text-zinc-300 overflow-x-auto">
+{{ .Inner }}
+</div>
+{{ end }}
+</div>
+
+{{ with .Get "alt" }}
+<figcaption class="sr-only">{{ . }}</figcaption>
+{{ end }}
+</figure>

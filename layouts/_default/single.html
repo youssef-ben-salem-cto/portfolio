@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ if eq .Type "projects" }}
+<!-- Sticky Context Header - projects type only -->
+<nav id="case-study-sticky-header"
+     aria-label="Case study navigation"
+     class="sticky top-16 z-40 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md
+            border-b border-gray-200/50 dark:border-white/10
+            transition-all duration-300 ease-out">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3
+              flex items-center justify-between gap-4">
+    <!-- Back link -->
+    <a id="case-study-back-link"
+       href="{{ "projects/" | relURL }}"
+       class="group flex items-center gap-2 text-sm font-medium
+              text-text-tertiary dark:text-text-tertiary
+              hover:text-text-primary dark:hover:text-text-primary
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:rounded
+              transition-colors duration-200 flex-shrink-0"
+       aria-label="Back to Master Index">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+      </svg>
+      Back to Index
+    </a>
+    <!-- Project title (truncated for sticky bar) -->
+    <h2 class="text-sm font-semibold text-text-primary dark:text-text-primary
+               font-heading truncate hidden sm:block">
+      {{ .Title }}
+    </h2>
+    <!-- Industry vertical tag (optional, from frontmatter) -->
+    {{ if .Params.industryVertical }}
+    <span class="text-xs font-mono text-text-tertiary dark:text-text-tertiary
+                 bg-bg-secondary dark:bg-bg-secondary px-2 py-1 rounded
+                 flex-shrink-0 hidden md:block">
+      {{ .Params.industryVertical }}
+    </span>
+    {{ end }}
+  </div>
+</nav>
+{{ end }}
+<section class="py-12 lg:py-20 bg-bg dark:bg-bg">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-8">
+      <!-- Main Content -->
+      <div class="w-full">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h1>
+        {{ if eq .Type "blog" }}
+        <div class="text-center text-text-secondary dark:text-text-secondary mb-12 flex items-center justify-center gap-4 text-sm font-medium">
+          <span class="flex items-center gap-2"><i class="far fa-calendar-alt"></i> <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></span>
+          {{ if .ReadingTime }}
+          <span class="text-border-primary">&bull;</span>
+          <span class="flex items-center gap-2"><i class="far fa-clock"></i> {{ .ReadingTime }} min read</span>
+          {{ end }}
+        </div>
+        {{ else if eq .Type "projects" }}
+        <div class="text-center text-text-secondary dark:text-text-secondary mb-12">
+          {{ if .Params.tags }}
+          <div class="flex flex-wrap justify-center gap-2">
+            {{ range .Params.tags }}
+            <span class="bg-bg-secondary dark:bg-bg-tertiary text-text-primary dark:text-text-primary px-3 py-1 rounded-full text-xs font-mono border border-border-primary dark:border-border-primary shadow-sm">
+              {{ . }}
+            </span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ if eq .Type "projects" }}
+<script src="{{ "js/case-study.js" | relURL }}" defer></script>
+{{ end }}
+{{ end }}

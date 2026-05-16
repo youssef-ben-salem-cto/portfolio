@@ -1,0 +1,46 @@
+{{ $classification := .Get "classification" | default "[EVIDENCE GALLERY]" }}
+{{ $dir := .Get "dir" }}
+
+<figure class="group evidence-container relative my-8 overflow-hidden rounded-xl bg-zinc-900/70 dark:bg-zinc-900/70 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-[2px] hover:shadow-lg hover:shadow-emerald-500/10 hover:border-emerald-500/30">
+  
+  <!-- Metadata Bar -->
+  <div class="flex items-center justify-between px-4 py-2 border-b border-white/10 bg-zinc-950/50">
+    <span class="text-xs font-mono text-emerald-400">
+      {{ $classification }}
+    </span>
+    <!-- Decorative dots -->
+    <div class="flex gap-1.5">
+      <div class="w-2 h-2 rounded-full bg-white/20 transition-colors group-hover:bg-emerald-500/50"></div>
+      <div class="w-2 h-2 rounded-full bg-white/20 transition-colors group-hover:bg-emerald-500/50" style="transition-delay: 75ms;"></div>
+      <div class="w-2 h-2 rounded-full bg-white/20 transition-colors group-hover:bg-emerald-500/50" style="transition-delay: 150ms;"></div>
+    </div>
+  </div>
+
+  <!-- Content Payload -->
+  <div class="p-4 max-h-[500px] overflow-y-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      {{ if $dir }}
+        {{ $path := printf "static/%s" $dir }}
+        {{ if fileExists $path }}
+          {{ range readDir $path }}
+            <a href="/{{ $dir }}/{{ .Name }}" data-fslightbox="gallery" class="block overflow-hidden rounded-lg border border-white/5 bg-zinc-800/50 hover:border-emerald-500/50 transition-colors duration-300">
+              <img src="/{{ $dir }}/{{ .Name }}" alt="{{ .Name }}" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500" loading="lazy">
+            </a>
+          {{ end }}
+        {{ else }}
+          <div class="text-text-muted italic border border-red-500/30 bg-red-500/10 p-4 rounded-xl">
+            [ERROR] {{ i18n "galleryNotFound" }} {{ $dir }}
+          </div>
+        {{ end }}
+      {{ else if .IsNamedParams }}
+        <!-- Handled by $dir if it existed -->
+      {{ else }}
+        {{ range .Params }}
+          <a href="{{ . }}" data-fslightbox="gallery" class="block overflow-hidden rounded-lg border border-white/5 bg-zinc-800/50 hover:border-emerald-500/50 transition-colors duration-300">
+            <img src="{{ . }}" alt="Gallery Image" class="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500" loading="lazy">
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</figure>

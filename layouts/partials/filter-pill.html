@@ -1,0 +1,6 @@
+<button 
+  class="filter-pill px-4 py-2 rounded-full text-sm font-medium border border-border-primary/50 dark:border-border-primary/50 bg-bg-secondary/50 dark:bg-bg-secondary/50 text-text-secondary hover:text-primary dark:text-text-secondary dark:hover:text-primary-light hover:border-primary/50 dark:hover:border-primary-light/50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary whitespace-nowrap"
+  data-filter-type="{{ .Type }}" 
+  data-filter-value="{{ .Value | urlize }}">
+  {{ .Label }}
+</button>
