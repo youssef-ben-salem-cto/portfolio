@@ -108,13 +108,17 @@
           {{ $bgClass = "bg-orange-50 dark:bg-orange-900/20" }}
           {{ $borderHover = "group-hover:border-orange-500 dark:group-hover:border-orange-400" }}
           {{ $textHover = "group-hover:text-orange-600 dark:group-hover:text-orange-400" }}
+        {{ else if eq .File.LogicalName "sia.md" }}
+          {{ $bgClass = "bg-emerald-50 dark:bg-emerald-900/20" }}
+          {{ $borderHover = "group-hover:border-emerald-500 dark:group-hover:border-emerald-400" }}
+          {{ $textHover = "group-hover:text-emerald-600 dark:group-hover:text-emerald-400" }}
         {{ end }}
 
         <a href="{{ .RelPermalink }}" class="block group relative">
           <div class="h-full {{ $bgClass }} rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 {{ $borderHover }}">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 {{ $textHover }} transition-colors">
               {{ .Title }} 
-              {{ if eq .File.LogicalName "eye-of-horus.md" }}
+              {{ if or (eq .File.LogicalName "eye-of-horus.md") (eq .File.LogicalName "sia.md") }}
               <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-gradient-to-r from-orange-500 to-red-500 text-white ml-2 shadow-sm align-middle -mt-1">
                 <i class="fas fa-fire animate-pulse"></i> HOT
               </span>
