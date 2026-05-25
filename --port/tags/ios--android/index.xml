@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IOS &amp; Android on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/ios--android/</link>
+    <description>Recent content in IOS &amp; Android on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ios--android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Afreximbank Exco App</title>
+      <link>http://localhost:1313/projects/afreximbank-exco/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/afreximbank-exco/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-start md:items-center gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-border-color p-4&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/afreximbank-exco/images/afr.svg&#xA;&#34; alt=&#34;Afreximbank Logo&#34; class=&#34;w-full h-full object-contain&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Secure Executive Operations&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Empowering the executive committee with banking-grade security and seamless connectivity.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;The Afreximbank Exco App is a dedicated platform designed specifically for the executive committee. Built with &lt;strong&gt;Flutter&lt;/strong&gt; for high-performance &lt;strong&gt;iOS &amp; Android&lt;/strong&gt; execution, it utilizes &lt;strong&gt;Clean Architecture&lt;/strong&gt; and deeply integrates with the main Afreximbank Connect app to provide a seamless yet ultra-secure experience.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

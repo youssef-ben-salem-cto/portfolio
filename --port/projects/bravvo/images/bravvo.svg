@@ -1,0 +1,33 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ca3af" />
+      <stop offset="100%" stop-color="#6b7280" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark background to match card -->
+  <rect width="800" height="400" fill="#18181b"/>
+  
+  <g transform="translate(400, 220)">
+    <!-- Centered text -->
+    <text x="-40" y="0" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="140" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-2">bravvo</text>
+    
+    <!-- Rays positioned relative to the 'o' -->
+    <g transform="translate(145, -45)">
+      <!-- Top Right -->
+      <line x1="50" y1="-40" x2="80" y2="-70" stroke="#00dc82" stroke-width="14" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Right -->
+      <line x1="70" y1="0" x2="110" y2="0" stroke="#00dc82" stroke-width="14" stroke-linecap="round" filter="url(#glow)"/>
+      <!-- Bottom Right -->
+      <line x1="50" y1="40" x2="80" y2="70" stroke="#00dc82" stroke-width="14" stroke-linecap="round" filter="url(#glow)"/>
+    </g>
+  </g>
+</svg>

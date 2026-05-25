@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agentic AI on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/agentic-ai/</link>
+    <description>Recent content in Agentic AI on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Mar 2026 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agentic-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Agentic AI Revolution in Enterprise</title>
+      <link>http://localhost:1313/blog/agentic-ai-enterprise/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/agentic-ai-enterprise/</guid>
+      <description>&lt;p&gt;The integration of &lt;strong&gt;Agentic Artificial Intelligence&lt;/strong&gt; into enterprise ecosystems marks a major turning point.&lt;/p&gt;&#xA;&lt;h3 id=&#34;context-engineering-with-graphrag&#34;&gt;Context Engineering with GraphRAG&lt;/h3&gt;&#xA;&lt;p&gt;To optimize vector and contextual search, the use of &lt;strong&gt;GraphRAG&lt;/strong&gt; allows autonomous agents to better understand business semantics.&lt;/p&gt;&#xA;&lt;h3 id=&#34;complex-workflows&#34;&gt;Complex Workflows&lt;/h3&gt;&#xA;&lt;p&gt;Solutions like &lt;strong&gt;n8n&lt;/strong&gt; and &lt;strong&gt;LangGraph&lt;/strong&gt; have become essential for orchestrating multi-agent workflows, where each agent (A2A) interacts to solve end-to-end business problems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

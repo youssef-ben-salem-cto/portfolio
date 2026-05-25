@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/code/</link>
+    <description>Recent content in Code on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Mar 2025 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Markdown, Code, and Mermaid</title>
+      <link>http://localhost:1313/blog/test-content-types/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/test-content-types/</guid>
+      <description>&lt;p&gt;This post verifies that the site&amp;rsquo;s rendering pipeline supports all required technical writing formats seamlessly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-standard-markdown&#34;&gt;1. Standard Markdown&lt;/h2&gt;&#xA;&lt;p&gt;You can write normal markdown content easily:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bold text&lt;/strong&gt; and &lt;em&gt;italic text&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Lists with multiple items.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#xA;&lt;a href=&#34;https://youssef-bensalem.com&#34;&gt;Links to external sites&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Blockquotes for important callouts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A well-architected system is a joy to behold.&amp;rdquo;&#xA;— Youssef Ben Salem&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;2-source-code-highlighting&#34;&gt;2. Source Code Highlighting&lt;/h2&gt;&#xA;&lt;p&gt;Writing code is natively supported via Hugo&amp;rsquo;s Chroma syntax highlighter. Here is a quick Python script:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSO on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/sso/</link>
+    <description>Recent content in SSO on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sso/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bravvo: AI-Augmented Enterprise Platform</title>
+      <link>http://localhost:1313/projects/bravvo/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bravvo/</guid>
+      <description>&lt;div class=&#34;mb-12 flex flex-col md:flex-row items-center md:items-start gap-8&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;images/bravvo-logo.svg&#34; alt=&#34;Bravvo&#34; class=&#34;w-32 h-32 object-contain bg-slate-900 rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-lg text-text-secondary dark:text-text-secondary leading-relaxed&#34;&gt;&#xA;&lt;p class=&#34;mb-4&#34;&gt;&lt;strong class=&#34;text-text-primary dark:text-text-primary font-bold&#34;&gt;Driving ESG Impact Through Employee Engagement:&lt;/strong&gt; Bravvo V2 is the ultimate employee engagement and sustainability platform. It transforms corporate ESG (Environmental, Social, and Governance) goals into actionable, daily habits. By leveraging gamification and intelligent challenges, Bravvo empowers employees to act, learn, and contribute to real-world impact in just 10 minutes a day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beekeeper Tech</title>
+      <link>http://localhost:1313/projects/beekeeper/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/beekeeper/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/beekeeper/images/beekeeperlogo.svg&#xA;&#34; alt=&#34;Beekeeper Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Beekeeper Tech Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Next-generation Agritech platform powering digital apiaries and connected hives.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;The Beekeeper Tech platform is a masterclass in modern application design, uniting mobile convenience with enterprise-scale backend processing. Built on &lt;strong&gt;Clean Code&lt;/strong&gt; and strict &lt;strong&gt;Clean Architecture&lt;/strong&gt; principles, this platform provides agritech professionals with real-time analytics and management capabilities for their apiaries.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

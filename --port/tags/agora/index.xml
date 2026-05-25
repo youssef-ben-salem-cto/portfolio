@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agora on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/agora/</link>
+    <description>Recent content in Agora on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Galeries Live: Interactive Live Stream Selling Platform</title>
+      <link>http://localhost:1313/projects/galeries-live/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/galeries-live/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/galeries-live/images/galeries-icon.svg&#xA;&#34; alt=&#34;Galeries Live Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Galeries Live Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Interactive live stream selling platform redefining e-commerce.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Redefining E-commerce Through Real-Time Engagement:&lt;/strong&gt; Galeries Live is an innovative platform bridging the gap between entertainment and retail. By blending high-quality live video with seamless e-commerce checkout, it empowers brands to connect directly with consumers, driving sales through interactive Live Stream Selling events.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stripe on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/stripe/</link>
+    <description>Recent content in Stripe on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/stripe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rentex App: Comprehensive Equipment Rental Platform</title>
+      <link>http://localhost:1313/projects/rentex-app/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/rentex-app/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/rentex-app/images/converted.svg&#xA;&#34; alt=&#34;Rentex App Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Rentex App Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Cross-platform ecosystem for modern equipment rental and payment processing.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Transforming the Rental Economy:&lt;/strong&gt; The Rentex App provides a robust, end-to-end platform for equipment rental. By combining a seamless mobile experience for end-users with a powerful administrative web portal, the solution orchestrates complex inventory logistics, secure payment flows, and reliable data synchronization.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

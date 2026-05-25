@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youssef Ben Salem</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive Video Gallery</title>
+      <link>http://localhost:1313/tahut-kms/video-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/video-gallery/</guid>
+      <description>Explore the end-to-end user journeys, administration flows, and real-time processing capabilities of the Tahut KMS platform through high-definition demonstrations.</description>
+    </item>
+    <item>
+      <title>We Work Better</title>
+      <link>http://localhost:1313/projects/we-work-better/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/we-work-better/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-5xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/we-work-better/images/we-removebg-preview.png&#xA;&#34; alt=&#34;We Work Better Logo&#34; class=&#34;w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-center md:text-left&#34;&gt;&#xA;&lt;h2 class=&#34;text-4xl font-extrabold text-text-primary mb-3&#34;&gt;We Work Better Platform&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-xl font-medium&#34;&gt;Enterprise B2B architecture engineered for global scale and strict security compliance.&lt;/p&gt;&#xA;&lt;div class=&#34;mt-6 flex flex-wrap justify-center md:justify-start gap-3&#34;&gt;&#xA;&lt;a href=&#34;https://weworkbetter.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-primary text-white font-semibold hover:bg-brand-primary/90 transition-colors shadow-sm&#34;&gt;&#xA;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Visit Web portal&#xA;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p class=&#34;text-lg leading-relaxed&#34;&gt;&lt;strong&gt;Transforming the B2B Landscape:&lt;/strong&gt; We Work Better is a technical masterclass in enterprise-grade architecture. Built from the ground up to solve complex organizational workflows, it leverages a unified &lt;strong&gt;Flutter&lt;/strong&gt; codebase for web and mobile, powered by a highly modular &lt;strong&gt;Nest.js&lt;/strong&gt; backend structured around Domain-Driven Design (DDD). The entire ecosystem communicates asynchronously via &lt;strong&gt;Kafka&lt;/strong&gt;, ensuring fault tolerance and horizontal scalability for critical B2B workloads.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real Reaction: Capture Emotion</title>
+      <link>http://localhost:1313/projects/real-reaction/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/real-reaction/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/real-reaction/images/realreaction.webp&#xA;&#34; alt=&#34;Real Reaction Logo&#34; class=&#34;w-32 h-32 object-contain bg-slate-900 rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-center md:text-left&#34;&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Real Reaction App&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Feel it. Save it. Share it. The ultimate emotion capturing experience.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Capture the Moment:&lt;/strong&gt; Real Reaction is an innovative application that allows you to capture a video reaction of your friends exactly at the moment they read your message. It&#39;s designed to bring authentic, natural emotions to your daily conversations. No more fake reactions—just real, unfiltered emotions preserved forever.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bravvo: AI-Augmented Enterprise Platform</title>
+      <link>http://localhost:1313/projects/bravvo/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bravvo/</guid>
+      <description>&lt;div class=&#34;mb-12 flex flex-col md:flex-row items-center md:items-start gap-8&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;images/bravvo-logo.svg&#34; alt=&#34;Bravvo&#34; class=&#34;w-32 h-32 object-contain bg-slate-900 rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-lg text-text-secondary dark:text-text-secondary leading-relaxed&#34;&gt;&#xA;&lt;p class=&#34;mb-4&#34;&gt;&lt;strong class=&#34;text-text-primary dark:text-text-primary font-bold&#34;&gt;Driving ESG Impact Through Employee Engagement:&lt;/strong&gt; Bravvo V2 is the ultimate employee engagement and sustainability platform. It transforms corporate ESG (Environmental, Social, and Governance) goals into actionable, daily habits. By leveraging gamification and intelligent challenges, Bravvo empowers employees to act, learn, and contribute to real-world impact in just 10 minutes a day.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Engine &amp; Workspace</title>
+      <link>http://localhost:1313/tahut-kms/ai-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/ai-engine/</guid>
+      <description>Inside the Cognitive Agent Layer: Chain-of-Thought reasoning, real-time memory synchronization, and surgical UI context preservation.</description>
+    </item>
+    <item>
+      <title>Amen Bank Mobile App</title>
+      <link>http://localhost:1313/projects/amen-bank-mobile-app/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/amen-bank-mobile-app/</guid>
+      <description>&lt;div class=&#34;mb-12 flex flex-col md:flex-row items-center md:items-start gap-8&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;images/amen-logo.png&#34; alt=&#34;Amen Bank&#34; class=&#34;w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-lg text-text-secondary dark:text-text-secondary leading-relaxed&#34;&gt;&#xA;&lt;p class=&#34;mb-4&#34;&gt;&lt;strong class=&#34;text-text-primary dark:text-text-primary font-bold&#34;&gt;Redefining Mobile Banking:&lt;/strong&gt; The Amen Bank mobile application is a major banking application built with robust clean architecture principles. It delivers a secure, highly performant, and seamless banking experience to users, enabling them to manage their finances effortlessly on the go without compromising on enterprise-grade security.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;grid grid-cols-1 md:grid-cols-2 gap-6 my-12 text-center&#34;&gt;&#xA;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.amenmobile.amenbank&amp;hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;block p-6 rounded-xl bg-bg-secondary dark:bg-bg-secondary border border-border-primary dark:border-border-primary shadow-sm hover:border-primary transition-colors&#34;&gt;&#xA;&lt;div class=&#34;text-3xl font-bold text-primary dark:text-primary-light mb-2&#34;&gt;&lt;i class=&#34;fab fa-google-play&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;text-sm text-text-tertiary dark:text-text-tertiary uppercase tracking-wider font-semibold&#34;&gt;Google Play Store&lt;/div&gt;&#xA;&lt;/a&gt;&#xA;&lt;a href=&#34;https://apps.apple.com/tn/app/amen-mobile/id1144455485&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;block p-6 rounded-xl bg-bg-secondary dark:bg-bg-secondary border border-border-primary dark:border-border-primary shadow-sm hover:border-primary transition-colors&#34;&gt;&#xA;&lt;div class=&#34;text-3xl font-bold text-primary dark:text-primary-light mb-2&#34;&gt;&lt;i class=&#34;fab fa-apple&#34;&gt;&lt;/i&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;text-sm text-text-tertiary dark:text-text-tertiary uppercase tracking-wider font-semibold&#34;&gt;Apple App Store&lt;/div&gt;&#xA;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;space-y-12&#34;&gt;&#xA;&lt;section&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary dark:text-text-primary mb-6 flex items-center gap-3&#34;&gt;&#xA;&lt;span class=&#34;w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center text-sm&#34;&gt;&lt;i class=&#34;fas fa-wallet&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xA;Comprehensive Digital Banking&#xA;&lt;/h2&gt;&#xA;&lt;div class=&#34;bg-bg-secondary dark:bg-bg-secondary border border-border-primary dark:border-border-primary rounded-2xl p-6 md:p-8 shadow-sm&#34;&gt;&#xA;&lt;p class=&#34;text-text-secondary dark:text-text-secondary mb-6 leading-relaxed&#34;&gt;The Amen Mobile application translates the complete physical branch experience into a secure, intuitive digital platform, offering users end-to-end control over their financial operations directly from their pocket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Afreximbank Connect</title>
+      <link>http://localhost:1313/projects/afreximbank-connect/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/afreximbank-connect/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-start md:items-center gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-border-color&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/afreximbank-connect/images/afr.svg&#xA;&#34; alt=&#34;Afreximbank Connect Logo&#34; class=&#34;w-16 h-16 object-contain&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Secure Mobile Connectivity&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Delivering robust, real-time transaction approvals with uncompromising security.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;Afreximbank Connect represents the pinnacle of banking-grade mobile security, providing a highly secure gateway for real-time transaction approvals and executive connectivity. Built with &lt;strong&gt;Flutter&lt;/strong&gt; for seamless performance across iOS and Android, the application integrates tightly with &lt;strong&gt;Auth0&lt;/strong&gt; to deliver state-of-the-art authentication mechanisms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Architecture &amp; Scale</title>
+      <link>http://localhost:1313/tahut-kms/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/architecture/</guid>
+      <description>Decoupled Ingestion Pipeline, Distributed Redis Workers, and SSE Pub/Sub for sub-200ms real-time verification.</description>
+    </item>
+    <item>
+      <title>Afreximbank Exco App</title>
+      <link>http://localhost:1313/projects/afreximbank-exco/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/afreximbank-exco/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-start md:items-center gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-white/5 flex items-center justify-center shrink-0 border border-border-color p-4&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/afreximbank-exco/images/afr.svg&#xA;&#34; alt=&#34;Afreximbank Logo&#34; class=&#34;w-full h-full object-contain&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Secure Executive Operations&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Empowering the executive committee with banking-grade security and seamless connectivity.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;The Afreximbank Exco App is a dedicated platform designed specifically for the executive committee. Built with &lt;strong&gt;Flutter&lt;/strong&gt; for high-performance &lt;strong&gt;iOS &amp; Android&lt;/strong&gt; execution, it utilizes &lt;strong&gt;Clean Architecture&lt;/strong&gt; and deeply integrates with the main Afreximbank Connect app to provide a seamless yet ultra-secure experience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beekeeper Tech</title>
+      <link>http://localhost:1313/projects/beekeeper/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/beekeeper/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/beekeeper/images/beekeeperlogo.svg&#xA;&#34; alt=&#34;Beekeeper Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Beekeeper Tech Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Next-generation Agritech platform powering digital apiaries and connected hives.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;The Beekeeper Tech platform is a masterclass in modern application design, uniting mobile convenience with enterprise-scale backend processing. Built on &lt;strong&gt;Clean Code&lt;/strong&gt; and strict &lt;strong&gt;Clean Architecture&lt;/strong&gt; principles, this platform provides agritech professionals with real-time analytics and management capabilities for their apiaries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security, Identity &amp; Compliance</title>
+      <link>http://localhost:1313/tahut-kms/compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/compliance/</guid>
+      <description>OIDC/SAML Federation, Air-Gapped RBAC, and Immutable Kafka Audit Logging for Banking Environments.</description>
+    </item>
+    <item>
+      <title>Eye of Horus: Active Intelligence Alerts</title>
+      <link>http://localhost:1313/tahut-kms/eye-of-horus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/eye-of-horus/</guid>
+      <description>Transforming the KMS from a passive repository into a real-time, active intelligence monitoring platform.</description>
+    </item>
+    <item>
+      <title>&#34;Sia&#34;: Cognitive Recommendations</title>
+      <link>http://localhost:1313/tahut-kms/sia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/sia/</guid>
+      <description>A Dual-Pipeline Architecture establishing a configuration-driven AI recommender system operating concurrently with the alerting engine.</description>
+    </item>
+    <item>
+      <title>Galeries Live: Interactive Live Stream Selling Platform</title>
+      <link>http://localhost:1313/projects/galeries-live/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/galeries-live/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/galeries-live/images/galeries-icon.svg&#xA;&#34; alt=&#34;Galeries Live Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Galeries Live Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Interactive live stream selling platform redefining e-commerce.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Redefining E-commerce Through Real-Time Engagement:&lt;/strong&gt; Galeries Live is an innovative platform bridging the gap between entertainment and retail. By blending high-quality live video with seamless e-commerce checkout, it empowers brands to connect directly with consumers, driving sales through interactive Live Stream Selling events.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TMF Carrier App: Advanced Logistics and Transportation Platform</title>
+      <link>http://localhost:1313/projects/tmf-carrier-app/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tmf-carrier-app/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/tmf-carrier-app/images/converted.svg&#xA;&#34; alt=&#34;TMF Carrier App Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;TMF Carrier App Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Advanced logistics platform for routing optimization and tracking.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Transforming Logistics Through Scalable Architecture:&lt;/strong&gt; The TMF Carrier App is a robust platform designed to streamline logistics and transportation operations. By integrating intelligent routing, real-time tracking, and comprehensive web administration, it empowers carriers and dispatchers to achieve unprecedented operational efficiency and visibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rentex App: Comprehensive Equipment Rental Platform</title>
+      <link>http://localhost:1313/projects/rentex-app/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/rentex-app/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/rentex-app/images/converted.svg&#xA;&#34; alt=&#34;Rentex App Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Rentex App Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Cross-platform ecosystem for modern equipment rental and payment processing.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Transforming the Rental Economy:&lt;/strong&gt; The Rentex App provides a robust, end-to-end platform for equipment rental. By combining a seamless mobile experience for end-users with a powerful administrative web portal, the solution orchestrates complex inventory logistics, secure payment flows, and reliable data synchronization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Carrefour Tunisie App</title>
+      <link>http://localhost:1313/projects/carrefour-tunisie/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/carrefour-tunisie/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/carrefour-tunisie/images/car-tunisie-removebg-preview.png&#xA;&#34; alt=&#34;Carrefour Tunisie Logo&#34; class=&#34;w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Carrefour Tunisie&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;The official mobile shopping and loyalty experience for Carrefour Tunisia.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Transforming Retail Convenience:&lt;/strong&gt; The Carrefour Tunisie app brings the full supermarket experience to users&#39; fingertips. It integrates a comprehensive e-commerce platform with the Carrefour Wafa loyalty program, offering digital receipts, personalized catalogs, and a streamlined checkout process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Agentic AI Revolution in Enterprise</title>
+      <link>http://localhost:1313/blog/agentic-ai-enterprise/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/agentic-ai-enterprise/</guid>
+      <description>&lt;p&gt;The integration of &lt;strong&gt;Agentic Artificial Intelligence&lt;/strong&gt; into enterprise ecosystems marks a major turning point.&lt;/p&gt;&#xA;&lt;h3 id=&#34;context-engineering-with-graphrag&#34;&gt;Context Engineering with GraphRAG&lt;/h3&gt;&#xA;&lt;p&gt;To optimize vector and contextual search, the use of &lt;strong&gt;GraphRAG&lt;/strong&gt; allows autonomous agents to better understand business semantics.&lt;/p&gt;&#xA;&lt;h3 id=&#34;complex-workflows&#34;&gt;Complex Workflows&lt;/h3&gt;&#xA;&lt;p&gt;Solutions like &lt;strong&gt;n8n&lt;/strong&gt; and &lt;strong&gt;LangGraph&lt;/strong&gt; have become essential for orchestrating multi-agent workflows, where each agent (A2A) interacts to solve end-to-end business problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing Markdown, Code, and Mermaid</title>
+      <link>http://localhost:1313/blog/test-content-types/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/test-content-types/</guid>
+      <description>&lt;p&gt;This post verifies that the site&amp;rsquo;s rendering pipeline supports all required technical writing formats seamlessly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-standard-markdown&#34;&gt;1. Standard Markdown&lt;/h2&gt;&#xA;&lt;p&gt;You can write normal markdown content easily:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bold text&lt;/strong&gt; and &lt;em&gt;italic text&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Lists with multiple items.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&#xA;&lt;a href=&#34;https://youssef-bensalem.com&#34;&gt;Links to external sites&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Blockquotes for important callouts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;A well-architected system is a joy to behold.&amp;rdquo;&#xA;— Youssef Ben Salem&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;2-source-code-highlighting&#34;&gt;2. Source Code Highlighting&lt;/h2&gt;&#xA;&lt;p&gt;Writing code is natively supported via Hugo&amp;rsquo;s Chroma syntax highlighter. Here is a quick Python script:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Executive Biography</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;With over 20 years of experience, I combine deep technical expertise and executive leadership. Currently &lt;strong&gt;CTO at MINT-IT&lt;/strong&gt;, I drive innovation strategy, scalable architecture design, and the integration of &lt;strong&gt;Agentic Artificial Intelligence&lt;/strong&gt; into complex ecosystems.&lt;/p&gt;&#xA;&lt;p&gt;As the architect behind several &lt;strong&gt;patented platforms&lt;/strong&gt;, I specialize in transforming complex business requirements into robust, cloud-native architectures. My leadership in digital transformation spans the full Software Development Life Cycle (SDLC), from establishing rigorous quality assurance protocols to deploying highly available distributed systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>http://localhost:1313/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expertise &amp; Domains</title>
+      <link>http://localhost:1313/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/skills/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Get in Touch</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical Skills</title>
+      <link>http://localhost:1313/technical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/technical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testimonials</title>
+      <link>http://localhost:1313/testimonials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/testimonials/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    GraphRAG | Youssef Ben Salem
+  
+</title>
+
+
+<meta name="description" content="Portfolio of Youssef Ben Salem - CTO, Software Architect, AI Expert" />
+<meta name="author" content="Youssef Ben Salem" />
+<link rel="canonical" href="http://localhost:1313/tags/graphrag/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="GraphRAG | Youssef Ben Salem" />
+<meta property="og:description" content="Portfolio of Youssef Ben Salem - CTO, Software Architect, AI Expert" />
+<meta property="og:url" content="http://localhost:1313/tags/graphrag/" />
+<meta property="og:image" content="http://localhost:1313/images/og-default.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Youssef Ben Salem" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GraphRAG | Youssef Ben Salem" />
+<meta name="twitter:description" content="Portfolio of Youssef Ben Salem - CTO, Software Architect, AI Expert" />
+<meta name="twitter:image" content="http://localhost:1313/images/og-default.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+   
+  .fade-in-visible { opacity: 1 !important; transform: none !important; }
+  
+  noscript section[data-animate],
+  noscript [data-animation],
+  body.js-failed section[data-animate],
+  body.js-failed [data-animation] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+</style>
+<script>
+  
+  setTimeout(() => {
+      document.body.classList.add('js-failed');
+      document.querySelectorAll('[data-animation], [data-animate]').forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+      });
+  }, 2000);
+</script>
+
+    
+    
+    <style>
+ 
+:root {
+   
+  
+  
+  --color-primary: #474A51;
+  --color-second: #E52521;
+  --color-third: #3CB043;
+  
+  
+   
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: #fafafa;
+  --color-bg-secondary: #ffffff;
+  --color-text-primary: #18181b;
+  --color-text-secondary: #52525b;
+  --color-border: #e4e4e7;
+}
+
+ 
+.dark {
+  --color-bg: #09090b;
+  --color-bg-secondary: #18181b;
+  --color-bg-tertiary: #27272a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-border: #3f3f46;
+  --color-text-muted: #71717a;
+  --color-border-secondary: #52525b;
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />    
+    <link rel="stylesheet" href="/css/main.css" data-version="1779737924">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50" role="banner">
+  <div class="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/"
+          class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Youssef
+          Ben Salem</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-6">
+        
+        
+        
+        
+        <a href="%20/#skills"
+          class="nav-link section-link text-text-primary dark:text-text-primary" data-section="#skills">Skills</a>
+        
+        
+        
+        
+        
+        
+        <a href="%20/#experience"
+          class="nav-link section-link text-text-primary dark:text-text-primary" data-section="#experience">Experience</a>
+        
+        
+        
+        
+        
+        
+        <a href="%20/#technical"
+          class="nav-link section-link text-text-primary dark:text-text-primary" data-section="#technical">Technical</a>
+        
+        
+        
+        
+        
+        
+        <a href="/projects/" class="nav-link text-text-primary dark:text-text-primary">Projects</a>
+        
+        
+        
+        
+        
+        
+        <a href="%20/#contact"
+          class="nav-link section-link text-text-primary dark:text-text-primary" data-section="#contact">Contact</a>
+        
+        
+        
+        
+        
+        <a href="/tahut-kms/" class="group flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-50 dark:bg-cyan-900/20 hover:bg-cyan-100 dark:hover:bg-cyan-900/40 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/50 transition-all duration-300 text-sm font-medium shadow-sm">
+          <img src="/images/tahut-kms/logos/logo-light.png" alt="Tahut KMS" class="h-4 w-auto dark:hidden group-hover:scale-110 transition-transform">
+          <img src="/images/tahut-kms/logos/logo-dark.png" alt="Tahut KMS" class="h-4 w-auto hidden dark:block group-hover:scale-110 transition-transform">
+          Tahut KMS
+        </a>
+
+        
+        
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          
+          <a href="https://www.linkedin.com/in/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer"
+            class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class=" fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          
+          <a href="https://github.com/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer"
+            class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class=" fab fa-github text-xl"></i>
+          </a>
+          
+          
+          
+          <a href="mailto:youssef.ben.salem@gmail.com"
+            class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125 relative group"
+            onclick="copyEmail(event, 'youssef.ben.salem@gmail.com')">
+            <i class="fas fa-envelope text-xl"></i>
+            <span
+              class="absolute top-8 left-1/2 -translate-x-1/2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 transition-opacity duration-300 pointer-events-none email-tooltip">Copy
+              Email</span>
+          </a>
+          
+          
+        </div>
+        
+        <button class="theme-toggle focus:outline-none hover:opacity-70 transition-opacity flex items-center justify-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.5rem;" aria-label="Toggle Dark Mode">
+  
+  <i class="fas fa-sun block dark:hidden" style="color: #000000;"></i>
+  
+  <i class="fas fa-moon hidden dark:block" style="color: #f3f4f6;"></i>
+</button>
+
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button class="theme-toggle focus:outline-none hover:opacity-70 transition-opacity flex items-center justify-center" style="width: 2.5rem; height: 2.5rem; font-size: 1.5rem;" aria-label="Toggle Dark Mode">
+  
+  <i class="fas fa-sun block dark:hidden" style="color: #000000;"></i>
+  
+  <i class="fas fa-moon hidden dark:block" style="color: #f3f4f6;"></i>
+</button>
+
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+      
+      
+      <a href="%20/#skills"
+        class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary"
+        data-section="#skills">
+        Skills
+      </a>
+      
+      
+      
+      
+      
+      <a href="%20/#experience"
+        class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary"
+        data-section="#experience">
+        Experience
+      </a>
+      
+      
+      
+      
+      
+      <a href="%20/#technical"
+        class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary"
+        data-section="#technical">
+        Technical
+      </a>
+      
+      
+      
+      
+      
+      <a href="/projects/"
+        class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+        Projects
+      </a>
+      
+      
+      
+      
+      
+      <a href="%20/#contact"
+        class="nav-link section-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary"
+        data-section="#contact">
+        Contact
+      </a>
+      
+      
+      
+      
+      
+      <a href="/tahut-kms/" class="flex items-center justify-center gap-2 mt-4 mb-2 mx-3 px-4 py-2 rounded-lg bg-cyan-50 dark:bg-cyan-900/20 text-cyan-700 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/50 text-base font-medium transition-colors">
+        <img src="/images/tahut-kms/logos/logo-light.png" alt="Tahut KMS" class="h-5 w-auto dark:hidden">
+        <img src="/images/tahut-kms/logos/logo-dark.png" alt="Tahut KMS" class="h-5 w-auto hidden dark:block">
+        Tahut KMS
+      </a>
+
+      
+      
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2"
+        data-animation="social">
+        
+        
+        <a href="https://www.linkedin.com/in/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer"
+          class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class=" fab fa-linkedin-in text-2xl"></i>
+        </a>
+        
+        
+        
+        <a href="https://github.com/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer"
+          class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class=" fab fa-github text-2xl"></i>
+        </a>
+        
+        
+        
+        <a href="mailto:youssef.ben.salem@gmail.com"
+          class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125 relative group"
+          onclick="copyEmail(event, 'youssef.ben.salem@gmail.com')">
+          <i class="fas fa-envelope text-2xl"></i>
+          <span
+            class="absolute top-8 left-1/2 -translate-x-1/2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 transition-opacity duration-300 pointer-events-none email-tooltip">Copy
+            Email</span>
+        </a>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('Navigation script loaded');
+
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+
+      
+      handleHashScroll();
+
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+
+      
+      window.addEventListener('hashchange', function () {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+
+      
+      window.addEventListener('load', function () {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function (event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.querySelectorAll('.theme-toggle').forEach(toggle => {
+      toggle.addEventListener('click', toggleDarkMode);
+    });
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    
+    window.copyEmail = function(e, email) {
+      if (e) e.preventDefault();
+      
+      
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).then(() => {
+          showNavToast('Email copied to clipboard!');
+        });
+      }
+    };
+
+    function showNavToast(message) {
+      const toast = document.createElement('div');
+      toast.textContent = message;
+      toast.className = 'fixed bottom-6 right-6 bg-blue-600 dark:bg-blue-600 text-white px-6 py-3 rounded shadow-xl z-[100] font-medium transition-opacity duration-300';
+      document.body.appendChild(toast);
+  
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+
+
+  </script>
+</nav>
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section class="pt-8 pb-12 bg-bg dark:bg-bg" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="mb-12">
+      <h1 class="text-3xl lg:text-4xl font-bold text-center mb-6 font-heading text-text-primary dark:text-text-primary">GraphRAG</h1>
+      
+    </header>
+
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="master-index-grid">
+      
+      
+      
+      
+      
+      <a href="/blog/agentic-ai-enterprise/" 
+         class="group block h-full outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl case-study-card transition-all duration-300 transform opacity-100 scale-100 origin-top" 
+         aria-label="View case study: The Agentic AI Revolution in Enterprise"
+         
+         >
+        <article class="h-full flex flex-col rounded-lg overflow-hidden bg-bg-secondary dark:bg-bg-secondary border border-border-primary dark:border-border-primary shadow-sm group-hover:border-gray-300 dark:group-hover:border-gray-600 transition-colors duration-300 relative" data-animate>
+          
+          
+          <div class="w-full h-48 relative overflow-hidden flex-shrink-0 bg-bg-secondary dark:bg-bg-secondary">
+            
+            <img 
+              src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" 
+              alt="" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            >
+            
+            <div class="absolute inset-0 bg-text-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          
+          
+          <div class="p-6 flex-1 flex flex-col">
+            <header>
+              <h2 class="text-xl font-bold mb-2 font-heading text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                The Agentic AI Revolution in Enterprise
+              </h2>
+            </header>
+            
+            
+            <p class="text-text-secondary dark:text-text-secondary mb-4 leading-relaxed text-sm line-clamp-3 flex-1">
+              How to transform emerging technologies into concrete competitive advantages via Agentic AI.
+            </p>
+            
+            
+            
+            <footer class="mt-auto pt-4 border-t border-border-primary/50 dark:border-border-primary/50">
+              <div class="flex flex-wrap items-center text-xs text-text-tertiary dark:text-text-tertiary mb-3 gap-3 font-mono">
+                
+                <div class="flex items-center">
+                  <i class="far fa-calendar-alt mr-1.5"></i>
+                  <span>2026</span>
+                </div>
+                
+                
+                <div class="flex items-center">
+                  <i class="far fa-clock mr-1.5"></i>
+                  <span>1 min</span>
+                </div>
+                
+              </div>
+              
+              
+              <div class="flex flex-wrap gap-2">
+                
+                <span class="bg-black/5 dark:bg-white/5 px-2 py-1 rounded text-xs font-mono text-text-secondary dark:text-text-secondary transition-colors group-hover:bg-primary/10 dark:group-hover:bg-primary-light/10 group-hover:text-primary dark:group-hover:text-primary-light">
+                  Agentic AI
+                </span>
+                
+                <span class="bg-black/5 dark:bg-white/5 px-2 py-1 rounded text-xs font-mono text-text-secondary dark:text-text-secondary transition-colors group-hover:bg-primary/10 dark:group-hover:bg-primary-light/10 group-hover:text-primary dark:group-hover:text-primary-light">
+                  GraphRAG
+                </span>
+                
+                <span class="bg-black/5 dark:bg-white/5 px-2 py-1 rounded text-xs font-mono text-text-secondary dark:text-text-secondary transition-colors group-hover:bg-primary/10 dark:group-hover:bg-primary-light/10 group-hover:text-primary dark:group-hover:text-primary-light">
+                  LLM
+                </span>
+                
+                <span class="bg-black/5 dark:bg-white/5 px-2 py-1 rounded text-xs font-mono text-text-secondary dark:text-text-secondary transition-colors group-hover:bg-primary/10 dark:group-hover:bg-primary-light/10 group-hover:text-primary dark:group-hover:text-primary-light">
+                  Architecture
+                </span>
+                
+              </div>
+              
+            </footer>
+          </div>
+        </article>
+      </a>
+      
+    </div>
+    
+    
+    
+  </div>
+</section>
+
+
+<script src="/js/filter.js" defer></script>
+
+
+
+    </main>
+
+    <footer class="relative overflow-hidden bg-bg dark:bg-bg border-t border-gray-200/50 dark:border-white/10 mt-20">
+  
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-12 right-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex flex-col lg:flex-row justify-between gap-12 lg:gap-16">
+      
+      
+      <div class="lg:w-5/12 space-y-6">
+        <div>
+          <a href="/#home" class="text-2xl font-bold font-heading bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+            Youssef Ben Salem
+          </a>
+          <p class="text-sm font-medium text-primary mt-1">CTO | AI &amp; Cloud Native Expert</p>
+        </div>
+        
+        <p class="text-text-secondary dark:text-text-secondary leading-relaxed">
+          Visionary technology leader with 20&#43; years of experience, combining deep technical expertise and executive leadership. Currently CTO at MINT-IT, driving innovation strategy, scalable architecture design, and Agentic AI integration.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-text-secondary dark:text-text-secondary pt-2">
+          <span class="inline-flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Tunisia
+          </span>
+          <a href="mailto:youssef.ben.salem@gmail.com" onclick="window.copyEmail(event, 'youssef.ben.salem@gmail.com')" class="inline-flex items-center gap-1.5 hover:text-primary dark:hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            youssef.ben.salem@gmail.com
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="lg:w-6/12 flex flex-col md:flex-row justify-between gap-10">
+        
+        
+        <div class="flex-1">
+          <h3 class="text-sm font-semibold text-text-primary dark:text-text-primary tracking-wider uppercase mb-6">Expertise Focus</h3>
+          <div class="flex flex-wrap gap-2">
+            
+            
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border
+                       
+                         bg-white/50 dark:bg-zinc-800/50 border-gray-200/50 dark:border-white/10 text-text-secondary dark:text-text-secondary backdrop-blur-sm
+                        transition-colors hover:bg-gray-50 dark:hover:bg-zinc-700/50 cursor-default">
+              Agentic AI
+            </span>
+            
+            
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border
+                       
+                         bg-white/50 dark:bg-zinc-800/50 border-gray-200/50 dark:border-white/10 text-text-secondary dark:text-text-secondary backdrop-blur-sm
+                        transition-colors hover:bg-gray-50 dark:hover:bg-zinc-700/50 cursor-default">
+              Cloud Native
+            </span>
+            
+            
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border
+                       
+                         bg-white/50 dark:bg-zinc-800/50 border-gray-200/50 dark:border-white/10 text-text-secondary dark:text-text-secondary backdrop-blur-sm
+                        transition-colors hover:bg-gray-50 dark:hover:bg-zinc-700/50 cursor-default">
+              Software Architecture
+            </span>
+            
+          </div>
+        </div>
+
+        
+        <div>
+          <h3 class="text-sm font-semibold text-text-primary dark:text-text-primary tracking-wider uppercase mb-6">Connect</h3>
+          <div class="flex flex-wrap gap-3" data-animation="social">
+            
+            <a href="https://www.linkedin.com/in/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer" 
+               
+               aria-label="linkedin-in profile"
+               class="group inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-zinc-800/50 border border-gray-200/50 dark:border-white/10 
+                      text-text-secondary dark:text-text-secondary hover:text-primary dark:hover:text-primary-light backdrop-blur-sm
+                      hover:bg-white dark:hover:bg-zinc-700 hover:shadow-md hover:border-primary/30 
+                      transition-all duration-300 hover:-translate-y-1
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            
+            <a href="https://github.com/youssef-ben-salem-cto/" target="_blank" rel="noopener noreferrer" 
+               
+               aria-label="github profile"
+               class="group inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-zinc-800/50 border border-gray-200/50 dark:border-white/10 
+                      text-text-secondary dark:text-text-secondary hover:text-primary dark:hover:text-primary-light backdrop-blur-sm
+                      hover:bg-white dark:hover:bg-zinc-700 hover:shadow-md hover:border-primary/30 
+                      transition-all duration-300 hover:-translate-y-1
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <i class="fab fa-github text-lg"></i>
+            </a>
+            
+            <a href="mailto:youssef.ben.salem@gmail.com" target="_blank" rel="noopener noreferrer" 
+               onclick="window.copyEmail(event, 'youssef.ben.salem@gmail.com')"
+               aria-label="envelope profile"
+               class="group inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/50 dark:bg-zinc-800/50 border border-gray-200/50 dark:border-white/10 
+                      text-text-secondary dark:text-text-secondary hover:text-primary dark:hover:text-primary-light backdrop-blur-sm
+                      hover:bg-white dark:hover:bg-zinc-700 hover:shadow-md hover:border-primary/30 
+                      transition-all duration-300 hover:-translate-y-1
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+              <i class="fas fa-envelope text-lg"></i>
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="mt-16 pt-8 border-t border-gray-200/50 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-text-tertiary dark:text-text-tertiary">
+      <p>© 2026 | © 2026 | Youssef Ben Salem</p>
+      <div class="flex items-center gap-6">
+        <a href="/#home" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Home</a>
+        <a href="/about" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">About</a>
+        <a href="mailto:youssef.ben.salem@gmail.com" onclick="window.copyEmail(event, 'youssef.ben.salem@gmail.com')" class="hover:text-text-primary dark:hover:text-text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+<div id="pexels-config" data-queries="[&#34;long span bridges&#34;,&#34;skyscrapers&#34;,&#34;sky and clouds&#34;]" data-pexels-api-key="" data-formspree-endpoint="" style="display: none;"></div>
+<script>
+  (function() {
+    var el = document.getElementById('pexels-config');
+    if (el) {
+      window.PEXELS_API_KEY = el.getAttribute('data-pexels-api-key') || '';
+      window.FORMSPREE_ENDPOINT = el.getAttribute('data-formspree-endpoint') || '';
+      try { window.PEXELS_QUERIES = JSON.parse(el.getAttribute('data-queries')); } catch (e) { window.PEXELS_QUERIES = []; }
+    } else {
+      window.PEXELS_API_KEY = window.FORMSPREE_ENDPOINT = '';
+      window.PEXELS_QUERIES = [];
+    }
+  })();
+</script>
+
+    
+
+<script>
+  
+  window.HUGO_COLOR_PALETTES = [
+    
+    {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#E52521",
+      third_color: "#3CB043"
+    },
+    
+    {
+      name: "ocean",
+      main_color: "#1E40AF",
+      second_color: "#06B6D4",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "steel",
+      main_color: "#374151",
+      second_color: "#6B7280",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "slate",
+      main_color: "#475569",
+      second_color: "#0EA5E9",
+      third_color: "#F97316"
+    }
+    
+  ];
+  
+  
+  if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
+    console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
+  }
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/devicon-fallback.js"></script>
+    <script src="/js/dynamic-colors.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="/js/pexels-background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+    
+    
+</body>
+</html>

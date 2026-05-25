@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tahut KMS on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tahut-kms/</link>
+    <description>Recent content in Tahut KMS on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tahut-kms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive Video Gallery</title>
+      <link>http://localhost:1313/tahut-kms/video-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/video-gallery/</guid>
+      <description>Explore the end-to-end user journeys, administration flows, and real-time processing capabilities of the Tahut KMS platform through high-definition demonstrations.</description>
+    </item>
+    <item>
+      <title>AI Engine &amp; Workspace</title>
+      <link>http://localhost:1313/tahut-kms/ai-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/ai-engine/</guid>
+      <description>Inside the Cognitive Agent Layer: Chain-of-Thought reasoning, real-time memory synchronization, and surgical UI context preservation.</description>
+    </item>
+    <item>
+      <title>Architecture &amp; Scale</title>
+      <link>http://localhost:1313/tahut-kms/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/architecture/</guid>
+      <description>Decoupled Ingestion Pipeline, Distributed Redis Workers, and SSE Pub/Sub for sub-200ms real-time verification.</description>
+    </item>
+    <item>
+      <title>Security, Identity &amp; Compliance</title>
+      <link>http://localhost:1313/tahut-kms/compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/compliance/</guid>
+      <description>OIDC/SAML Federation, Air-Gapped RBAC, and Immutable Kafka Audit Logging for Banking Environments.</description>
+    </item>
+    <item>
+      <title>Eye of Horus: Active Intelligence Alerts</title>
+      <link>http://localhost:1313/tahut-kms/eye-of-horus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/eye-of-horus/</guid>
+      <description>Transforming the KMS from a passive repository into a real-time, active intelligence monitoring platform.</description>
+    </item>
+    <item>
+      <title>&#34;Sia&#34;: Cognitive Recommendations</title>
+      <link>http://localhost:1313/tahut-kms/sia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tahut-kms/sia/</guid>
+      <description>A Dual-Pipeline Architecture establishing a configuration-driven AI recommender system operating concurrently with the alerting engine.</description>
+    </item>
+  </channel>
+</rss>

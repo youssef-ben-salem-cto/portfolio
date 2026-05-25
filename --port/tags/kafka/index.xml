@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafka on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/kafka/</link>
+    <description>Recent content in Kafka on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We Work Better</title>
+      <link>http://localhost:1313/projects/we-work-better/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/we-work-better/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-5xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/we-work-better/images/we-removebg-preview.png&#xA;&#34; alt=&#34;We Work Better Logo&#34; class=&#34;w-32 h-32 object-contain bg-white rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-center md:text-left&#34;&gt;&#xA;&lt;h2 class=&#34;text-4xl font-extrabold text-text-primary mb-3&#34;&gt;We Work Better Platform&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-xl font-medium&#34;&gt;Enterprise B2B architecture engineered for global scale and strict security compliance.&lt;/p&gt;&#xA;&lt;div class=&#34;mt-6 flex flex-wrap justify-center md:justify-start gap-3&#34;&gt;&#xA;&lt;a href=&#34;https://weworkbetter.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-primary text-white font-semibold hover:bg-brand-primary/90 transition-colors shadow-sm&#34;&gt;&#xA;&lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; Visit Web portal&#xA;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p class=&#34;text-lg leading-relaxed&#34;&gt;&lt;strong&gt;Transforming the B2B Landscape:&lt;/strong&gt; We Work Better is a technical masterclass in enterprise-grade architecture. Built from the ground up to solve complex organizational workflows, it leverages a unified &lt;strong&gt;Flutter&lt;/strong&gt; codebase for web and mobile, powered by a highly modular &lt;strong&gt;Nest.js&lt;/strong&gt; backend structured around Domain-Driven Design (DDD). The entire ecosystem communicates asynchronously via &lt;strong&gt;Kafka&lt;/strong&gt;, ensuring fault tolerance and horizontal scalability for critical B2B workloads.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

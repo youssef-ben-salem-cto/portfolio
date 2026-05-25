@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobile Application</title>
+      <link>http://localhost:1313/tags/mobile-application/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mobile-application/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social</title>
+      <link>http://localhost:1313/tags/social/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/social/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video Capture</title>
+      <link>http://localhost:1313/tags/video-capture/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/video-capture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DDD</title>
+      <link>http://localhost:1313/tags/ddd/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ddd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event Driven</title>
+      <link>http://localhost:1313/tags/event-driven/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/event-driven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kafka</title>
+      <link>http://localhost:1313/tags/kafka/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kafka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nest.js</title>
+      <link>http://localhost:1313/tags/nest.js/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nest.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://localhost:1313/tags/postgresql/</link>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E-Commerce</title>
+      <link>http://localhost:1313/tags/e-commerce/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/e-commerce/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loyalty Program</title>
+      <link>http://localhost:1313/tags/loyalty-program/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/loyalty-program/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Retail</title>
+      <link>http://localhost:1313/tags/retail/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/retail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agentic AI</title>
+      <link>http://localhost:1313/tags/agentic-ai/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agentic-ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>http://localhost:1313/tags/architecture/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GraphRAG</title>
+      <link>http://localhost:1313/tags/graphrag/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/graphrag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Sat, 14 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Banking</title>
+      <link>http://localhost:1313/tags/banking/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/banking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Clean Architecture</title>
+      <link>http://localhost:1313/tags/clean-architecture/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/clean-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flutter</title>
+      <link>http://localhost:1313/tags/flutter/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/flutter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile App</title>
+      <link>http://localhost:1313/tags/mobile-app/</link>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mobile-app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Auth0</title>
+      <link>http://localhost:1313/tags/auth0/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/auth0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CIBA</title>
+      <link>http://localhost:1313/tags/ciba/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ciba/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MFA</title>
+      <link>http://localhost:1313/tags/mfa/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mfa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PAR</title>
+      <link>http://localhost:1313/tags/par/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/par/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOS &amp; Android</title>
+      <link>http://localhost:1313/tags/ios--android/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ios--android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logistics</title>
+      <link>http://localhost:1313/tags/logistics/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nest JS</title>
+      <link>http://localhost:1313/tags/nest-js/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nest-js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Next.js</title>
+      <link>http://localhost:1313/tags/next.js/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/next.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code</title>
+      <link>http://localhost:1313/tags/code/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mermaid</title>
+      <link>http://localhost:1313/tags/mermaid/</link>
+      <pubDate>Sat, 15 Mar 2025 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>http://localhost:1313/tags/microservices/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSO</title>
+      <link>http://localhost:1313/tags/sso/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sso/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI-Augmented</title>
+      <link>http://localhost:1313/tags/ai-augmented/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai-augmented/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loopback JS</title>
+      <link>http://localhost:1313/tags/loopback-js/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/loopback-js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>React JS</title>
+      <link>http://localhost:1313/tags/react-js/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/react-js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agora</title>
+      <link>http://localhost:1313/tags/agora/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Live Stream Selling</title>
+      <link>http://localhost:1313/tags/live-stream-selling/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/live-stream-selling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stripe</title>
+      <link>http://localhost:1313/tags/stripe/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stripe/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

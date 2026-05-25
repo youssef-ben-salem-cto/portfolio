@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerSync on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/powersync/</link>
+    <description>Recent content in PowerSync on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/powersync/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Real Reaction: Capture Emotion</title>
+      <link>http://localhost:1313/projects/real-reaction/</link>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/real-reaction/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex flex-col md:flex-row items-center md:items-start gap-8 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;shrink-0&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/real-reaction/images/realreaction.webp&#xA;&#34; alt=&#34;Real Reaction Logo&#34; class=&#34;w-32 h-32 object-contain bg-slate-900 rounded-3xl shadow-md border border-border-primary dark:border-border-primary p-2&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;text-center md:text-left&#34;&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;Real Reaction App&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Feel it. Save it. Share it. The ultimate emotion capturing experience.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Capture the Moment:&lt;/strong&gt; Real Reaction is an innovative application that allows you to capture a video reaction of your friends exactly at the moment they read your message. It&#39;s designed to bring authentic, natural emotions to your daily conversations. No more fake reactions—just real, unfiltered emotions preserved forever.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

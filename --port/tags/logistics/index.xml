@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logistics on Youssef Ben Salem</title>
+    <link>http://localhost:1313/tags/logistics/</link>
+    <description>Recent content in Logistics on Youssef Ben Salem</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/logistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TMF Carrier App: Advanced Logistics and Transportation Platform</title>
+      <link>http://localhost:1313/projects/tmf-carrier-app/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tmf-carrier-app/</guid>
+      <description>&lt;div class=&#34;space-y-16&#34;&gt;&#xA;&lt;section class=&#34;max-w-4xl mx-auto px-4 md:px-0&#34;&gt;&#xA;&lt;div class=&#34;bg-bg-secondary border border-border-color rounded-2xl p-8 lg:p-12 shadow-lg relative overflow-hidden group&#34;&gt;&#xA;&lt;div class=&#34;absolute inset-0 bg-gradient-to-br from-brand-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;flex items-center gap-6 mb-8 relative z-10&#34;&gt;&#xA;&lt;div class=&#34;w-24 h-24 rounded-xl bg-bg-secondary flex items-center justify-center shrink-0 border border-border-primary overflow-hidden&#34;&gt;&#xA;&lt;img src=&#34;http://localhost:1313/projects/tmf-carrier-app/images/converted.svg&#xA;&#34; alt=&#34;TMF Carrier App Logo&#34; class=&#34;w-full h-full object-cover&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div&gt;&#xA;&lt;h2 class=&#34;text-3xl font-bold text-text-primary mb-2&#34;&gt;TMF Carrier App Implementation&lt;/h2&gt;&#xA;&lt;p class=&#34;text-text-secondary text-lg&#34;&gt;Advanced logistics platform for routing optimization and tracking.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;prose prose-invert max-w-none text-text-secondary space-y-4&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Transforming Logistics Through Scalable Architecture:&lt;/strong&gt; The TMF Carrier App is a robust platform designed to streamline logistics and transportation operations. By integrating intelligent routing, real-time tracking, and comprehensive web administration, it empowers carriers and dispatchers to achieve unprecedented operational efficiency and visibility.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
